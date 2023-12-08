@@ -61,7 +61,7 @@ CREATE TABLE farmer_inventories
     FOREIGN KEY(farmer_id) REFERENCES farmers(farmer_id),
     product_name VARCHAR(50) NOT NULL,
     product_quantity INT NOT NULL,
-    product_last_updated DATETIME NOT NULL
+    product_last_updated DATETIME DEFAULT GETDATE() NOT NULL
 )
 
 DROP TABLE IF EXISTS distributors
@@ -86,7 +86,7 @@ CREATE TABLE distributor_inventories
     FOREIGN KEY(distributor_id) REFERENCES distributors(distributor_id),
     product_name VARCHAR(50) NOT NULL,
     product_quantity VARCHAR(50) NOT NULL,
-    product_last_updated DATETIME NOT NULL
+    product_last_updated DATETIME DEFAULT GETDATE() NOT NULL
 )
 
 DROP TABLE IF EXISTS customers
@@ -111,7 +111,7 @@ CREATE TABLE customer_inventories
     FOREIGN KEY(customer_id) REFERENCES customers(customer_id),
     product_name VARCHAR(50) NOT NULL,
     product_quantity VARCHAR(50) NOT NULL,
-    product_last_updated DATETIME NOT NULL
+    product_last_updated DATETIME DEFAULT GETDATE() NOT NULL
 )
 
 DROP TABLE IF EXISTS transaction_types

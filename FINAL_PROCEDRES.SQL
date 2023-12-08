@@ -173,6 +173,16 @@ BEGIN
     EXEC update_inventories @transaction_id;
 END;
 GO
+
+
+
+
+
+
+
+
+
+
 -- SELECT NAME FROM SYS.TRIGGERS
 -- SELECT NAME FROM SYS.PROCEDURES
 
