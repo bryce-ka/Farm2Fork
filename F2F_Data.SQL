@@ -54,2183 +54,1633 @@ INSERT INTO products (product_name) VALUES ('Rice');
 INSERT INTO products (product_name) VALUES ('Soybeans');
 INSERT INTO products (product_name) VALUES ('Barley');
 INSERT INTO products (product_name) VALUES ('Oats');
-INSERT INTO products (product_name) VALUES ('Sorghum');
-INSERT INTO products (product_name) VALUES ('Cotton');
-INSERT INTO products (product_name) VALUES ('Potatoes');
-INSERT INTO products (product_name) VALUES ('Sweet Potatoes');
-INSERT INTO products (product_name) VALUES ('Tomatoes');
-INSERT INTO products (product_name) VALUES ('Apples');
-INSERT INTO products (product_name) VALUES ('Oranges');
-INSERT INTO products (product_name) VALUES ('Bananas');
-INSERT INTO products (product_name) VALUES ('Grapes');
-INSERT INTO products (product_name) VALUES ('Strawberries');
-INSERT INTO products (product_name) VALUES ('Blueberries');
-INSERT INTO products (product_name) VALUES ('Peaches');
-INSERT INTO products (product_name) VALUES ('Pears');
-INSERT INTO products (product_name) VALUES ('Carrots');
-INSERT INTO products (product_name) VALUES ('Broccoli');
-INSERT INTO products (product_name) VALUES ('Cabbage');
-INSERT INTO products (product_name) VALUES ('Lettuce');
-INSERT INTO products (product_name) VALUES ('Spinach');
-INSERT INTO products (product_name) VALUES ('Kale');
-INSERT INTO products (product_name) VALUES ('Cucumbers');
-INSERT INTO products (product_name) VALUES ('Peppers');
-INSERT INTO products (product_name) VALUES ('Onions');
-INSERT INTO products (product_name) VALUES ('Garlic');
-INSERT INTO products (product_name) VALUES ('Sugar Cane');
-INSERT INTO products (product_name) VALUES ('Sugarcane');
-INSERT INTO products (product_name) VALUES ('Coffee');
-INSERT INTO products (product_name) VALUES ('Tea');
-INSERT INTO products (product_name) VALUES ('Cocoa');
-INSERT INTO products (product_name) VALUES ('Mangoes');
-INSERT INTO products (product_name) VALUES ('Pineapples');
-INSERT INTO products (product_name) VALUES ('Papayas');
-INSERT INTO products (product_name) VALUES ('Coconuts');
-INSERT INTO products (product_name) VALUES ('Peanuts');
-INSERT INTO products (product_name) VALUES ('Almonds');
-INSERT INTO products (product_name) VALUES ('Walnuts');
-INSERT INTO products (product_name) VALUES ('Pecans');
-INSERT INTO products (product_name) VALUES ('Cashews');
-INSERT INTO products (product_name) VALUES ('Hazelnuts');
-INSERT INTO products (product_name) VALUES ('Pistachios');
-INSERT INTO products (product_name) VALUES ('Macadamia Nuts');
-INSERT INTO products (product_name) VALUES ('Sunflowers');
-INSERT INTO products (product_name) VALUES ('Safflower');
-INSERT INTO products (product_name) VALUES ('Flax');
-INSERT INTO products (product_name) VALUES ('Rapeseed');
-INSERT INTO products (product_name) VALUES ('Cottonseed');
-INSERT INTO products (product_name) VALUES ('Sesame');
-INSERT INTO products (product_name) VALUES ('Peas');
-INSERT INTO products (product_name) VALUES ('Lentils');
-INSERT INTO products (product_name) VALUES ('Chickpeas');
-INSERT INTO products (product_name) VALUES ('Kidney Beans');
-INSERT INTO products (product_name) VALUES ('Black Beans');
-INSERT INTO products (product_name) VALUES ('Pinto Beans');
-INSERT INTO products (product_name) VALUES ('Lima Beans');
-INSERT INTO products (product_name) VALUES ('Green Beans');
-INSERT INTO products (product_name) VALUES ('Cranberries');
-INSERT INTO products (product_name) VALUES ('Raspberries');
-INSERT INTO products (product_name) VALUES ('Blackberries');
-INSERT INTO products (product_name) VALUES ('Cherries');
-INSERT INTO products (product_name) VALUES ('Avocados');
-INSERT INTO products (product_name) VALUES ('Eggplant');
-INSERT INTO products (product_name) VALUES ('Zucchini');
-INSERT INTO products (product_name) VALUES ('Pumpkins');
-INSERT INTO products (product_name) VALUES ('Squash');
-INSERT INTO products (product_name) VALUES ('Okra');
-INSERT INTO products (product_name) VALUES ('Artichokes');
-INSERT INTO products (product_name) VALUES ('Asparagus');
-INSERT INTO products (product_name) VALUES ('Cauliflower');
-INSERT INTO products (product_name) VALUES ('Celery');
-INSERT INTO products (product_name) VALUES ('Radishes');
-INSERT INTO products (product_name) VALUES ('Beets');
-INSERT INTO products (product_name) VALUES ('Turnips');
-INSERT INTO products (product_name) VALUES ('Kiwifruit');
-INSERT INTO products (product_name) VALUES ('Honeydew Melon');
-INSERT INTO products (product_name) VALUES ('Cantaloupe');
-INSERT INTO products (product_name) VALUES ('Apricots');
-INSERT INTO products (product_name) VALUES ('Nectarines');
-INSERT INTO products (product_name) VALUES ('Plums');
-INSERT INTO products (product_name) VALUES ('Dates');
-INSERT INTO products (product_name) VALUES ('Figs');
-INSERT INTO products (product_name) VALUES ('Ginger');
-INSERT INTO products (product_name) VALUES ('Turmeric');
-INSERT INTO products (product_name) VALUES ('Vanilla');
-INSERT INTO products (product_name) VALUES ('Quinoa');
-INSERT INTO products (product_name) VALUES ('Amaranth');
-INSERT INTO products (product_name) VALUES ('Chia Seeds');
-INSERT INTO products (product_name) VALUES ('Hemp');
-INSERT INTO products (product_name) VALUES ('Rhubarb');
-INSERT INTO products (product_name) VALUES ('Guava');
-INSERT INTO products (product_name) VALUES ('Lychee');
-INSERT INTO products (product_name) VALUES ('Passion Fruit');
-INSERT INTO products (product_name) VALUES ('Durian');
-INSERT INTO products (product_name) VALUES ('Jackfruit');
-INSERT INTO products (product_name) VALUES ('Cassava');
-INSERT INTO products (product_name) VALUES ('Taro');
-INSERT INTO products (product_name) VALUES ('Bamboo Shoots');
-INSERT INTO products (product_name) VALUES ('Bok Choy');
-INSERT INTO products (product_name) VALUES ('Choy Sum');
-INSERT INTO products (product_name) VALUES ('Watercress');
-INSERT INTO products (product_name) VALUES ('Jicama');
-INSERT INTO products (product_name) VALUES ('Nopales');
-INSERT INTO products (product_name) VALUES ('Spirulina');
-INSERT INTO products (product_name) VALUES ('Kelp');
-INSERT INTO products (product_name) VALUES ('Dulse');
-INSERT INTO products (product_name) VALUES ('Seaweed');
-INSERT INTO products (product_name) VALUES ('Mushrooms');
-INSERT INTO products (product_name) VALUES ('Truffles');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('alice.smith@example.com', 'Distributor', 'password');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('alice.smith@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('alice.smith@example.com', 'Alice Smith','670-677-8455', 'North Dakota', '10544');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('bob.johnson@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('bob.johnson@example.com', 'Bob Johnson','523-965-8927', 'Ohio', '00458');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('catherine.brown@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('catherine.brown@example.com', 'Catherine Brown','552-274-3949', 'Alaska', '16525');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('david.davis@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('alice.smith@example.com', 'Alice Smith','997-214-3127', 'Tennessee', '24250');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('bob.johnson@example.com', 'Farmer', 'password');
+VALUES('david.davis@example.com', 'David Davis','139-612-6047', 'Connecticut', '12588');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('emily.wilson@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('bob.johnson@example.com', 'Bob Johnson','098-087-9014', 'Kansas', '71334');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('catherine.brown@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('catherine.brown@example.com', 'Catherine Brown','175-138-9534', 'Ohio', '58932');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('david.davis@example.com', 'Farmer', 'password');
+VALUES('emily.wilson@example.com', 'Emily Wilson','670-362-9069', 'Kentucky', '06364');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frank.miller@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('frank.miller@example.com', 'Frank Miller','248-941-7852', 'Kansas', '18198');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('grace.taylor@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('david.davis@example.com', 'David Davis','215-828-0946', 'Wisconsin', '69604');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('emily.wilson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('emily.wilson@example.com', 'Emily Wilson','000-478-2513', 'Wyoming', '70361');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frank.miller@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('frank.miller@example.com', 'Frank Miller','437-004-9255', 'Montana', '65734');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('grace.taylor@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('grace.taylor@example.com', 'Grace Taylor','859-731-4076', 'Maine', '19834');
+VALUES('grace.taylor@example.com', 'Grace Taylor','079-590-2155', 'Arizona', '33754');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.anderson@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('henry.anderson@example.com', 'Henry Anderson','392-601-3662', 'Nevada', '73129');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('irene.martin@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('irene.martin@example.com', 'Irene Martin','378-104-3209', 'Wisconsin', '00477');
+VALUES('henry.anderson@example.com', 'Henry Anderson','480-029-7555', 'Maryland', '27065');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('irene.martin@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('irene.martin@example.com', 'Irene Martin','363-167-4837', 'Montana', '50145');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('james.thompson@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('james.thompson@example.com', 'James Thompson','439-425-6072', 'Indiana', '64109');
+VALUES('james.thompson@example.com', 'James Thompson','091-600-4232', 'Colorado', '38498');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('katherine.harris@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('katherine.harris@example.com', 'Katherine Harris','974-542-0613', 'West Virginia', '97445');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.clark@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('liam.clark@example.com', 'Liam Clark','286-111-0942', 'New Mexico', '94896');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('megan.lewis@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('megan.lewis@example.com', 'Megan Lewis','961-208-4102', 'Colorado', '05481');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.young@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('nathan.young@example.com', 'Nathan Young','305-686-0051', 'Ohio', '98885');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.walker@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('olivia.walker@example.com', 'Olivia Walker','296-110-1508', 'North Carolina', '71866');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.hall@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('patrick.hall@example.com', 'Patrick Hall','303-471-7974', 'Indiana', '52393');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quincy.white@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('quincy.white@example.com', 'Quincy White','255-722-6864', 'Vermont', '42626');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.jackson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('rachel.jackson@example.com', 'Rachel Jackson','195-104-4225', 'South Dakota', '67709');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.moore@example.com', 'Customer', 'password');
+VALUES('katherine.harris@example.com', 'Katherine Harris','876-599-7316', 'Massachusetts', '43381');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.clark@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('samuel.moore@example.com', 'Samuel Moore','893-792-4536', 'Georgia', '95498');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.perez@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('taylor.perez@example.com', 'Taylor Perez','288-787-9114', 'Idaho', '13320');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.garcia@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('ursula.garcia@example.com', 'Ursula Garcia','355-262-5910', 'Wisconsin', '92161');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.scott@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('vincent.scott@example.com', 'Vincent Scott','706-479-9791', 'Washington', '12814');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.adams@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('wendy.adams@example.com', 'Wendy Adams','461-225-1637', 'Alaska', '09581');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.mitchell@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('xavier.mitchell@example.com', 'Xavier Mitchell','507-587-1432', 'Oregon', '06607');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.green@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('yasmine.green@example.com', 'Yasmine Green','901-025-1274', 'Oklahoma', '70525');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.king@example.com', 'Distributor', 'password');
+VALUES('liam.clark@example.com', 'Liam Clark','553-651-9948', 'Mississippi', '42186');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('megan.lewis@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('zachary.king@example.com', 'Zachary King','847-470-6077', 'South Carolina', '89043');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.wright@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('abigail.wright@example.com', 'Abigail Wright','127-665-2701', 'North Dakota', '25259');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.carter@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('benjamin.carter@example.com', 'Benjamin Carter','488-357-9708', 'West Virginia', '40178');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.robinson@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('charlotte.robinson@example.com', 'Charlotte Robinson','507-025-8859', 'Oklahoma', '45189');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.turner@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('daniel.turner@example.com', 'Daniel Turner','286-571-8452', 'California', '15895');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.hill@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('ella.hill@example.com', 'Ella Hill','718-177-6592', 'Montana', '74004');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.gonzalez@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('frederick.gonzalez@example.com', 'Frederick Gonzalez','985-501-7703', 'Michigan', '42408');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.nelson@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('gabrielle.nelson@example.com', 'Gabrielle Nelson','829-792-5814', 'Maryland', '30668');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.parker@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('henry.parker@example.com', 'Henry Parker','619-811-4379', 'South Carolina', '89894');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.murphy@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('isabella.murphy@example.com', 'Isabella Murphy','102-632-5291', 'Kansas', '38809');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.edwards@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('jacob.edwards@example.com', 'Jacob Edwards','659-873-4087', 'Arizona', '58234');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.stewart@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('kaitlyn.stewart@example.com', 'Kaitlyn Stewart','019-245-1877', 'Massachusetts', '63274');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.rogers@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('liam.rogers@example.com', 'Liam Rogers','131-834-7691', 'Maryland', '54999');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.cook@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('mia.cook@example.com', 'Mia Cook','785-274-7417', 'Nevada', '80001');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.morris@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('nathan.morris@example.com', 'Nathan Morris','536-254-9921', 'Wyoming', '49168');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.sullivan@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('olivia.sullivan@example.com', 'Olivia Sullivan','243-874-5217', 'Arizona', '37740');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.price@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('patrick.price@example.com', 'Patrick Price','062-882-3989', 'Delaware', '72888');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.baker@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('quinn.baker@example.com', 'Quinn Baker','690-121-3627', 'Idaho', '31571');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.sanchez@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('rachel.sanchez@example.com', 'Rachel Sanchez','302-107-8028', 'Idaho', '52452');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bennett@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('samuel.bennett@example.com', 'Samuel Bennett','339-825-0842', 'New Mexico', '59853');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.howard@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('taylor.howard@example.com', 'Taylor Howard','018-625-3453', 'Oklahoma', '53030');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.ramirez@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ursula.ramirez@example.com', 'Ursula Ramirez','426-650-9465', 'Delaware', '33411');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.hayes@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('vincent.hayes@example.com', 'Vincent Hayes','925-686-9136', 'Kentucky', '61569');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.foster@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('wendy.foster@example.com', 'Wendy Foster','961-726-6380', 'Colorado', '43297');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.barnes@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('xavier.barnes@example.com', 'Xavier Barnes','374-238-8423', 'Vermont', '16952');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.long@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('yasmine.long@example.com', 'Yasmine Long','395-845-5461', 'New York', '42074');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.coleman@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('zachary.coleman@example.com', 'Zachary Coleman','753-267-5408', 'Wyoming', '64234');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.gray@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('abigail.gray@example.com', 'Abigail Gray','909-844-3812', 'West Virginia', '59093');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.russell@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('benjamin.russell@example.com', 'Benjamin Russell','782-439-1387', 'Alaska', '86560');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.perry@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('charlotte.perry@example.com', 'Charlotte Perry','606-880-3083', 'North Dakota', '22272');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.howard@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('daniel.howard@example.com', 'Daniel Howard','403-852-7393', 'Rhode Island', '14359');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.kelly@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ella.kelly@example.com', 'Ella Kelly','441-075-9692', 'Vermont', '94569');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.simmons@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('frederick.simmons@example.com', 'Frederick Simmons','325-371-7675', 'Arizona', '14374');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.brooks@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('gabrielle.brooks@example.com', 'Gabrielle Brooks','425-841-5843', 'Florida', '06209');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bryant@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('henry.bryant@example.com', 'Henry Bryant','190-279-4340', 'Nevada', '28512');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.wood@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('isabella.wood@example.com', 'Isabella Wood','589-577-5152', 'South Carolina', '15127');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.fisher@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('jacob.fisher@example.com', 'Jacob Fisher','097-694-7938', 'Arizona', '29675');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.evans@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('kaitlyn.evans@example.com', 'Kaitlyn Evans','693-991-3064', 'Mississippi', '98660');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bishop@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('liam.bishop@example.com', 'Liam Bishop','748-533-6886', 'New Mexico', '03373');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.murray@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('mia.murray@example.com', 'Mia Murray','306-591-2954', 'Arizona', '68896');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.cole@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('nathan.cole@example.com', 'Nathan Cole','915-532-8017', 'Michigan', '36363');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.reyes@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('olivia.reyes@example.com', 'Olivia Reyes','944-529-3598', 'Virginia', '19563');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mitchell@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('patrick.mitchell@example.com', 'Patrick Mitchell','930-034-0257', 'Alabama', '31138');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.ross@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('quinn.ross@example.com', 'Quinn Ross','277-574-3433', 'Illinois', '04732');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.diaz@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('rachel.diaz@example.com', 'Rachel Diaz','385-788-0426', 'South Carolina', '47771');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.patterson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('samuel.patterson@example.com', 'Samuel Patterson','836-056-0212', 'Kansas', '50870');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.flores@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('taylor.flores@example.com', 'Taylor Flores','517-041-3736', 'Nevada', '46163');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.alexander@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('ursula.alexander@example.com', 'Ursula Alexander','558-751-1677', 'New Hampshire', '45620');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.sullivan@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('vincent.sullivan@example.com', 'Vincent Sullivan','723-854-6255', 'Arizona', '03157');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.stevens@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('wendy.stevens@example.com', 'Wendy Stevens','464-117-9914', 'South Dakota', '97801');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.butler@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('xavier.butler@example.com', 'Xavier Butler','353-621-1034', 'Texas', '17541');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.nguyen@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('yasmine.nguyen@example.com', 'Yasmine Nguyen','828-050-5490', 'Colorado', '70028');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.powell@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('zachary.powell@example.com', 'Zachary Powell','487-967-1869', 'Ohio', '11059');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.simmons@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('abigail.simmons@example.com', 'Abigail Simmons','178-078-1146', 'Arkansas', '05621');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.bryant@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('benjamin.bryant@example.com', 'Benjamin Bryant','789-494-9597', 'Indiana', '65729');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.roberts@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('charlotte.roberts@example.com', 'Charlotte Roberts','845-167-2607', 'Florida', '07371');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.morgan@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('daniel.morgan@example.com', 'Daniel Morgan','409-797-1195', 'Maryland', '17889');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.woodward@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ella.woodward@example.com', 'Ella Woodward','414-852-5675', 'Oklahoma', '92288');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.henderson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('frederick.henderson@example.com', 'Frederick Henderson','838-478-4539', 'Wisconsin', '82695');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.gardner@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('gabrielle.gardner@example.com', 'Gabrielle Gardner','439-409-2359', 'Montana', '75414');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bennett@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('henry.bennett@example.com', 'Henry Bennett','329-571-2720', 'West Virginia', '21802');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.richardson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('isabella.richardson@example.com', 'Isabella Richardson','925-524-0501', 'Nevada', '55898');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.cruz@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('jacob.cruz@example.com', 'Jacob Cruz','096-127-5745', 'Minnesota', '16435');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.ward@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('kaitlyn.ward@example.com', 'Kaitlyn Ward','965-851-3763', 'Iowa', '21747');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bailey@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('liam.bailey@example.com', 'Liam Bailey','141-731-5676', 'Florida', '14683');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.simmons@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('mia.simmons@example.com', 'Mia Simmons','087-410-6560', 'Wisconsin', '44217');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.harper@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('nathan.harper@example.com', 'Nathan Harper','415-457-2909', 'Wisconsin', '58260');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.morris@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('olivia.morris@example.com', 'Olivia Morris','763-570-1030', 'Minnesota', '96807');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mason@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('patrick.mason@example.com', 'Patrick Mason','148-942-7025', 'Massachusetts', '83343');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.lopez@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('quinn.lopez@example.com', 'Quinn Lopez','698-517-8576', 'Vermont', '92027');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.powell@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('rachel.powell@example.com', 'Rachel Powell','941-237-7301', 'Tennessee', '13285');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bell@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('samuel.bell@example.com', 'Samuel Bell','072-196-3410', 'Kansas', '08192');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.gonzalez@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('taylor.gonzalez@example.com', 'Taylor Gonzalez','389-365-2288', 'Alabama', '87487');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.smith@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ursula.smith@example.com', 'Ursula Smith','685-474-3934', 'Louisiana', '41623');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.torres@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('vincent.torres@example.com', 'Vincent Torres','608-671-6239', 'Nevada', '67929');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.williams@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('wendy.williams@example.com', 'Wendy Williams','938-563-7830', 'New Hampshire', '12843');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.collins@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('xavier.collins@example.com', 'Xavier Collins','949-541-7987', 'Minnesota', '56478');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.stewart@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('yasmine.stewart@example.com', 'Yasmine Stewart','087-409-8495', 'Mississippi', '87867');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.parker@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('zachary.parker@example.com', 'Zachary Parker','196-391-5390', 'Virginia', '98326');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.lewis@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('abigail.lewis@example.com', 'Abigail Lewis','791-707-8358', 'Florida', '32461');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.hall@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('benjamin.hall@example.com', 'Benjamin Hall','786-676-9926', 'Colorado', '81964');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.white@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('charlotte.white@example.com', 'Charlotte White','824-989-4894', 'Oregon', '34023');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.johnson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('daniel.johnson@example.com', 'Daniel Johnson','547-970-2768', 'Wisconsin', '79268');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.davis@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('ella.davis@example.com', 'Ella Davis','807-596-8797', 'Wisconsin', '06529');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.anderson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('frederick.anderson@example.com', 'Frederick Anderson','871-800-4627', 'Oklahoma', '91644');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.martin@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('gabrielle.martin@example.com', 'Gabrielle Martin','170-012-7194', 'Colorado', '21794');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.thompson@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('henry.thompson@example.com', 'Henry Thompson','026-341-7080', 'Alaska', '42017');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.harris@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('isabella.harris@example.com', 'Isabella Harris','411-439-6576', 'Alaska', '60033');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.clark@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('jacob.clark@example.com', 'Jacob Clark','359-830-8726', 'Colorado', '39755');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.lewis@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('kaitlyn.lewis@example.com', 'Kaitlyn Lewis','779-293-5285', 'Colorado', '90210');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.young@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('liam.young@example.com', 'Liam Young','146-225-2498', 'Illinois', '74208');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.walker@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('mia.walker@example.com', 'Mia Walker','199-276-7577', 'Nevada', '14937');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.garcia@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('nathan.garcia@example.com', 'Nathan Garcia','722-551-8943', 'Indiana', '76216');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.scott@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('olivia.scott@example.com', 'Olivia Scott','453-488-2325', 'Tennessee', '18190');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.adams@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('patrick.adams@example.com', 'Patrick Adams','177-134-2691', 'Hawaii', '31769');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.mitchell@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('quinn.mitchell@example.com', 'Quinn Mitchell','742-426-5418', 'Texas', '93977');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.perez@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('rachel.perez@example.com', 'Rachel Perez','724-137-8476', 'Hawaii', '30516');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.hayes@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('samuel.hayes@example.com', 'Samuel Hayes','992-902-0198', 'Illinois', '33451');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.foster@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('taylor.foster@example.com', 'Taylor Foster','371-928-9218', 'Illinois', '73331');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.barnes@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ursula.barnes@example.com', 'Ursula Barnes','434-404-2083', 'North Dakota', '26260');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.long@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('vincent.long@example.com', 'Vincent Long','237-514-4716', 'Virginia', '26557');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.coleman@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('wendy.coleman@example.com', 'Wendy Coleman','490-432-5162', 'Delaware', '38274');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.gray@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('xavier.gray@example.com', 'Xavier Gray','725-933-1127', 'Minnesota', '21650');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.king@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('yasmine.king@example.com', 'Yasmine King','621-324-1297', 'Arkansas', '34914');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.wright@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('zachary.wright@example.com', 'Zachary Wright','589-187-6830', 'Mississippi', '68700');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.carter@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('abigail.carter@example.com', 'Abigail Carter','395-510-8368', 'Delaware', '49322');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.robinson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('benjamin.robinson@example.com', 'Benjamin Robinson','062-763-3295', 'Georgia', '76297');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.turner@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('charlotte.turner@example.com', 'Charlotte Turner','519-087-1503', 'Arizona', '33729');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.hill@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('daniel.hill@example.com', 'Daniel Hill','305-410-1235', 'Ohio', '68543');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.gonzalez@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ella.gonzalez@example.com', 'Ella Gonzalez','894-923-8059', 'Alabama', '73422');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.nelson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('frederick.nelson@example.com', 'Frederick Nelson','034-224-0191', 'New York', '69637');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.parker@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('gabrielle.parker@example.com', 'Gabrielle Parker','067-834-8614', 'Kansas', '05137');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.murphy@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('henry.murphy@example.com', 'Henry Murphy','925-282-7974', 'New Mexico', '05367');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.edwards@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('isabella.edwards@example.com', 'Isabella Edwards','952-486-4358', 'Maryland', '87245');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.stewart@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('jacob.stewart@example.com', 'Jacob Stewart','950-458-7917', 'Georgia', '51953');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.rogers@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('kaitlyn.rogers@example.com', 'Kaitlyn Rogers','020-621-6483', 'Indiana', '27540');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.cook@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('liam.cook@example.com', 'Liam Cook','503-246-7163', 'Arkansas', '02423');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.morris@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('mia.morris@example.com', 'Mia Morris','325-893-0595', 'West Virginia', '70337');
+VALUES('megan.lewis@example.com', 'Megan Lewis','563-196-6067', 'Iowa', '08443');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.young@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('nathan.young@example.com', 'Nathan Young','642-890-6482', 'Florida', '17733');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.sullivan@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('olivia.sullivan@example.com', 'Olivia Sullivan','723-688-2935', 'Idaho', '54003');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.price@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('patrick.price@example.com', 'Patrick Price','718-159-8493', 'Wisconsin', '39650');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.baker@example.com', 'Farmer', 'password');
+VALUES('nathan.young@example.com', 'Nathan Young','222-691-3157', 'Maine', '47082');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.walker@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('quinn.baker@example.com', 'Quinn Baker','397-301-9999', 'North Dakota', '69774');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.sanchez@example.com', 'Distributor', 'password');
+VALUES('olivia.walker@example.com', 'Olivia Walker','139-664-3511', 'Iowa', '54905');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.hall@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('patrick.hall@example.com', 'Patrick Hall','661-909-1242', 'Washington', '71420');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quincy.white@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('rachel.sanchez@example.com', 'Rachel Sanchez','989-138-7167', 'Kansas', '59233');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bennett@example.com', 'Farmer', 'password');
+VALUES('quincy.white@example.com', 'Quincy White','153-191-3891', 'Georgia', '07448');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.jackson@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('rachel.jackson@example.com', 'Rachel Jackson','434-268-5892', 'Illinois', '54568');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.moore@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('samuel.moore@example.com', 'Samuel Moore','630-243-5408', 'Virginia', '48758');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.perez@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('samuel.bennett@example.com', 'Samuel Bennett','621-220-5407', 'Wisconsin', '46576');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.howard@example.com', 'Distributor', 'password');
+VALUES('taylor.perez@example.com', 'Taylor Perez','598-366-7662', 'Wisconsin', '62465');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.garcia@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('taylor.howard@example.com', 'Taylor Howard','730-266-4264', 'Ohio', '98836');
+VALUES('ursula.garcia@example.com', 'Ursula Garcia','231-359-1690', 'Kansas', '50022');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.scott@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('vincent.scott@example.com', 'Vincent Scott','881-465-3837', 'Alabama', '43471');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.adams@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('wendy.adams@example.com', 'Wendy Adams','966-029-4194', 'Ohio', '89718');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.mitchell@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('xavier.mitchell@example.com', 'Xavier Mitchell','982-544-8871', 'Arkansas', '84687');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.green@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('yasmine.green@example.com', 'Yasmine Green','816-749-9443', 'South Dakota', '62456');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.king@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('zachary.king@example.com', 'Zachary King','836-011-2304', 'Maine', '21432');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.wright@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('abigail.wright@example.com', 'Abigail Wright','780-173-5981', 'Louisiana', '99061');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.carter@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('benjamin.carter@example.com', 'Benjamin Carter','307-311-8190', 'Maine', '01445');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.robinson@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('charlotte.robinson@example.com', 'Charlotte Robinson','716-312-2928', 'Delaware', '44658');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.turner@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('daniel.turner@example.com', 'Daniel Turner','915-454-9335', 'Wisconsin', '21295');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.hill@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ella.hill@example.com', 'Ella Hill','595-082-7146', 'South Dakota', '57954');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.gonzalez@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('frederick.gonzalez@example.com', 'Frederick Gonzalez','730-946-7603', 'Kansas', '57072');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.nelson@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('gabrielle.nelson@example.com', 'Gabrielle Nelson','617-044-7335', 'West Virginia', '98243');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.parker@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('henry.parker@example.com', 'Henry Parker','764-009-7678', 'Wyoming', '25779');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.murphy@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('isabella.murphy@example.com', 'Isabella Murphy','720-979-5167', 'Colorado', '31853');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.edwards@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('jacob.edwards@example.com', 'Jacob Edwards','163-506-0847', 'Georgia', '93615');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.stewart@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('kaitlyn.stewart@example.com', 'Kaitlyn Stewart','587-754-8123', 'Tennessee', '74140');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.rogers@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('liam.rogers@example.com', 'Liam Rogers','629-278-5612', 'Massachusetts', '20711');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.cook@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('mia.cook@example.com', 'Mia Cook','190-843-1360', 'Hawaii', '59264');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.morris@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('nathan.morris@example.com', 'Nathan Morris','436-808-6418', 'Ohio', '60392');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.sullivan@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('olivia.sullivan@example.com', 'Olivia Sullivan','943-254-0799', 'Montana', '88606');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.price@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('patrick.price@example.com', 'Patrick Price','025-031-8065', 'Washington', '77059');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.baker@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('quinn.baker@example.com', 'Quinn Baker','142-638-4447', 'South Dakota', '88899');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.sanchez@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('rachel.sanchez@example.com', 'Rachel Sanchez','805-125-8184', 'Maryland', '53339');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bennett@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('samuel.bennett@example.com', 'Samuel Bennett','086-077-9898', 'Colorado', '64102');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.howard@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('taylor.howard@example.com', 'Taylor Howard','784-294-6182', 'Colorado', '09173');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.ramirez@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ursula.ramirez@example.com', 'Ursula Ramirez','146-494-1655', 'Wisconsin', '95480');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.hayes@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('vincent.hayes@example.com', 'Vincent Hayes','292-609-9614', 'Oklahoma', '62196');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.foster@example.com', 'Customer', 'password');
+VALUES('ursula.ramirez@example.com', 'Ursula Ramirez','499-152-2575', 'Nevada', '55978');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.hayes@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('wendy.foster@example.com', 'Wendy Foster','499-517-9144', 'Wisconsin', '95402');
+VALUES('vincent.hayes@example.com', 'Vincent Hayes','553-821-4299', 'Wisconsin', '34344');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.foster@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('wendy.foster@example.com', 'Wendy Foster','209-329-0487', 'North Carolina', '14707');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.barnes@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('xavier.barnes@example.com', 'Xavier Barnes','059-334-6438', 'South Dakota', '24207');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.long@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('yasmine.long@example.com', 'Yasmine Long','572-943-8558', 'Florida', '17146');
+VALUES('xavier.barnes@example.com', 'Xavier Barnes','563-887-4929', 'Kansas', '25390');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.long@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('yasmine.long@example.com', 'Yasmine Long','113-699-3282', 'Pennsylvania', '31294');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.coleman@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('zachary.coleman@example.com', 'Zachary Coleman','197-363-0291', 'Tennessee', '12167');
+VALUES('zachary.coleman@example.com', 'Zachary Coleman','887-214-2037', 'Minnesota', '87574');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.gray@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('abigail.gray@example.com', 'Abigail Gray','350-706-1022', 'Minnesota', '34035');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.russell@example.com', 'Customer', 'password');
+VALUES('abigail.gray@example.com', 'Abigail Gray','123-151-4695', 'Wisconsin', '93342');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.russell@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('benjamin.russell@example.com', 'Benjamin Russell','964-816-8985', 'New York', '02638');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.perry@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('benjamin.russell@example.com', 'Benjamin Russell','645-936-9189', 'North Carolina', '94829');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.perry@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('charlotte.perry@example.com', 'Charlotte Perry','080-343-3683', 'Alabama', '28862');
+VALUES('charlotte.perry@example.com', 'Charlotte Perry','751-177-5219', 'Oklahoma', '56865');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.howard@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('daniel.howard@example.com', 'Daniel Howard','256-393-2287', 'Minnesota', '75300');
+VALUES('daniel.howard@example.com', 'Daniel Howard','197-178-3546', 'New Mexico', '92499');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.kelly@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ella.kelly@example.com', 'Ella Kelly','546-344-6933', 'Alaska', '90766');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.simmons@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('frederick.simmons@example.com', 'Frederick Simmons','725-963-8463', 'Idaho', '12304');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.brooks@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('gabrielle.brooks@example.com', 'Gabrielle Brooks','458-028-0065', 'Arizona', '46396');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bryant@example.com', 'Customer', 'password');
-INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('henry.bryant@example.com', 'Henry Bryant','529-193-9032', 'Washington', '48280');
+VALUES('ella.kelly@example.com', 'Ella Kelly','581-930-4324', 'Delaware', '59949');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.simmons@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('frederick.simmons@example.com', 'Frederick Simmons','259-409-4018', 'Colorado', '45465');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.brooks@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('gabrielle.brooks@example.com', 'Gabrielle Brooks','984-337-9237', 'New Jersey', '97856');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bryant@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('henry.bryant@example.com', 'Henry Bryant','991-611-6738', 'Idaho', '63349');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.wood@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('isabella.wood@example.com', 'Isabella Wood','323-007-9930', 'Illinois', '69581');
+VALUES('isabella.wood@example.com', 'Isabella Wood','747-028-2367', 'Wisconsin', '65155');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.fisher@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('jacob.fisher@example.com', 'Jacob Fisher','962-443-1780', 'Texas', '07250');
+VALUES('jacob.fisher@example.com', 'Jacob Fisher','842-562-5544', 'Indiana', '84293');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.evans@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('kaitlyn.evans@example.com', 'Kaitlyn Evans','173-875-8350', 'North Carolina', '18723');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bishop@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('liam.bishop@example.com', 'Liam Bishop','700-928-1419', 'Nebraska', '28535');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.murray@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('mia.murray@example.com', 'Mia Murray','119-080-8051', 'Alaska', '31145');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.cole@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('nathan.cole@example.com', 'Nathan Cole','762-269-1474', 'Iowa', '35494');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.reyes@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('olivia.reyes@example.com', 'Olivia Reyes','936-721-9874', 'New Hampshire', '43915');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mitchell@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('patrick.mitchell@example.com', 'Patrick Mitchell','175-976-5844', 'Nevada', '11656');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.ross@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('quinn.ross@example.com', 'Quinn Ross','722-276-7264', 'Michigan', '51130');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.diaz@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('rachel.diaz@example.com', 'Rachel Diaz','242-714-1863', 'Alabama', '79078');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.patterson@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('samuel.patterson@example.com', 'Samuel Patterson','346-920-2573', 'Nebraska', '63769');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.flores@example.com', 'Customer', 'password');
+VALUES('kaitlyn.evans@example.com', 'Kaitlyn Evans','865-539-4692', 'Utah', '10581');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bishop@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('taylor.flores@example.com', 'Taylor Flores','882-722-4169', 'Nebraska', '11834');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.alexander@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('ursula.alexander@example.com', 'Ursula Alexander','650-095-2642', 'Georgia', '53428');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.sullivan@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('vincent.sullivan@example.com', 'Vincent Sullivan','624-704-7197', 'Vermont', '72422');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.stevens@example.com', 'Customer', 'password');
+VALUES('liam.bishop@example.com', 'Liam Bishop','566-841-4580', 'South Carolina', '73454');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.murray@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('wendy.stevens@example.com', 'Wendy Stevens','383-561-6204', 'Oklahoma', '91813');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.butler@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('xavier.butler@example.com', 'Xavier Butler','067-847-2564', 'Massachusetts', '37180');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.nguyen@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('yasmine.nguyen@example.com', 'Yasmine Nguyen','656-156-5103', 'Montana', '44440');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.powell@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('zachary.powell@example.com', 'Zachary Powell','439-052-2393', 'Colorado', '71271');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.simmons@example.com', 'Customer', 'password');
+VALUES('mia.murray@example.com', 'Mia Murray','072-776-7867', 'Maryland', '93407');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.cole@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('abigail.simmons@example.com', 'Abigail Simmons','171-675-5669', 'Pennsylvania', '87685');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.bryant@example.com', 'Farmer', 'password');
+VALUES('nathan.cole@example.com', 'Nathan Cole','473-336-6560', 'Maine', '05865');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.reyes@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('olivia.reyes@example.com', 'Olivia Reyes','035-468-9509', 'Utah', '69025');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mitchell@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('patrick.mitchell@example.com', 'Patrick Mitchell','342-918-1240', 'New Hampshire', '06645');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.ross@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('quinn.ross@example.com', 'Quinn Ross','052-551-3402', 'Nebraska', '82036');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.diaz@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('rachel.diaz@example.com', 'Rachel Diaz','785-003-3838', 'New Jersey', '65503');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.patterson@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('benjamin.bryant@example.com', 'Benjamin Bryant','116-498-7374', 'Kansas', '14743');
+VALUES('samuel.patterson@example.com', 'Samuel Patterson','818-665-6621', 'Colorado', '59025');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.flores@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('taylor.flores@example.com', 'Taylor Flores','838-931-6613', 'Arizona', '43692');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.alexander@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('ursula.alexander@example.com', 'Ursula Alexander','576-718-1811', 'New York', '81169');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.sullivan@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('vincent.sullivan@example.com', 'Vincent Sullivan','019-740-4359', 'Ohio', '56256');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.stevens@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('wendy.stevens@example.com', 'Wendy Stevens','218-905-7795', 'Missouri', '56842');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.butler@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('xavier.butler@example.com', 'Xavier Butler','682-009-3443', 'Indiana', '72764');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.nguyen@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('yasmine.nguyen@example.com', 'Yasmine Nguyen','962-000-6636', 'Indiana', '35237');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.powell@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('zachary.powell@example.com', 'Zachary Powell','326-032-2030', 'Idaho', '93327');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.simmons@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('abigail.simmons@example.com', 'Abigail Simmons','236-776-8681', 'California', '31751');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.bryant@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('benjamin.bryant@example.com', 'Benjamin Bryant','453-897-2157', 'Michigan', '87900');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.roberts@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('charlotte.roberts@example.com', 'Charlotte Roberts','542-094-4373', 'Kansas', '85525');
+VALUES('charlotte.roberts@example.com', 'Charlotte Roberts','985-352-9309', 'Alaska', '38941');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.morgan@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('daniel.morgan@example.com', 'Daniel Morgan','094-192-6659', 'New Mexico', '91299');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.woodward@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('ella.woodward@example.com', 'Ella Woodward','481-038-2803', 'Arizona', '45635');
+VALUES('daniel.morgan@example.com', 'Daniel Morgan','491-179-7411', 'Indiana', '99311');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.woodward@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('ella.woodward@example.com', 'Ella Woodward','498-904-3694', 'Wisconsin', '64686');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.henderson@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('frederick.henderson@example.com', 'Frederick Henderson','734-006-5896', 'Minnesota', '49467');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.gardner@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('gabrielle.gardner@example.com', 'Gabrielle Gardner','527-197-7789', 'Oklahoma', '68788');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bennett@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('henry.bennett@example.com', 'Henry Bennett','082-221-7633', 'Utah', '96381');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.richardson@example.com', 'Customer', 'password');
+VALUES('frederick.henderson@example.com', 'Frederick Henderson','972-380-6061', 'Iowa', '32363');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.gardner@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('isabella.richardson@example.com', 'Isabella Richardson','133-096-2057', 'Indiana', '59622');
+VALUES('gabrielle.gardner@example.com', 'Gabrielle Gardner','253-562-8262', 'South Carolina', '85678');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bennett@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('henry.bennett@example.com', 'Henry Bennett','308-924-2933', 'Kentucky', '34864');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.richardson@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('isabella.richardson@example.com', 'Isabella Richardson','161-936-6930', 'Montana', '61229');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.cruz@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('jacob.cruz@example.com', 'Jacob Cruz','304-284-5948', 'North Dakota', '05983');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.ward@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('kaitlyn.ward@example.com', 'Kaitlyn Ward','504-450-1540', 'Rhode Island', '63125');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bailey@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('liam.bailey@example.com', 'Liam Bailey','257-270-7018', 'New Jersey', '19639');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.simmons@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('mia.simmons@example.com', 'Mia Simmons','114-586-1345', 'Maine', '39785');
+VALUES('jacob.cruz@example.com', 'Jacob Cruz','321-576-7786', 'North Dakota', '21934');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.ward@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('kaitlyn.ward@example.com', 'Kaitlyn Ward','818-530-1988', 'Indiana', '34645');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bailey@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('liam.bailey@example.com', 'Liam Bailey','688-243-8564', 'New Hampshire', '94301');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.simmons@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('mia.simmons@example.com', 'Mia Simmons','052-371-4216', 'Oregon', '14799');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.harper@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('nathan.harper@example.com', 'Nathan Harper','321-638-1809', 'Michigan', '74840');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.morris@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('olivia.morris@example.com', 'Olivia Morris','065-355-9028', 'Louisiana', '64900');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mason@example.com', 'Customer', 'password');
+VALUES('nathan.harper@example.com', 'Nathan Harper','132-207-6345', 'Maine', '05024');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.morris@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('patrick.mason@example.com', 'Patrick Mason','917-327-6821', 'Wyoming', '05948');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.lopez@example.com', 'Farmer', 'password');
+VALUES('olivia.morris@example.com', 'Olivia Morris','178-808-6773', 'Pennsylvania', '90522');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mason@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('quinn.lopez@example.com', 'Quinn Lopez','266-880-3182', 'Ohio', '82789');
+VALUES('patrick.mason@example.com', 'Patrick Mason','592-843-2796', 'Missouri', '52975');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.lopez@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('quinn.lopez@example.com', 'Quinn Lopez','112-049-3082', 'Colorado', '28122');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.powell@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('rachel.powell@example.com', 'Rachel Powell','368-695-3403', 'California', '35948');
+VALUES('rachel.powell@example.com', 'Rachel Powell','406-725-3483', 'Illinois', '01180');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bell@example.com', 'Distributor', 'password');
 INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('samuel.bell@example.com', 'Samuel Bell','004-142-9171', 'Delaware', '90747');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.gonzalez@example.com', 'Distributor', 'password');
-INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
-VALUES('taylor.gonzalez@example.com', 'Taylor Gonzalez','873-498-4218', 'Maryland', '10866');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.smith@example.com', 'Farmer', 'password');
+VALUES('samuel.bell@example.com', 'Samuel Bell','583-630-6243', 'New Mexico', '61096');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.gonzalez@example.com', 'Farmer', 'password');
 INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('ursula.smith@example.com', 'Ursula Smith','262-686-4808', 'Illinois', '46223');
+VALUES('taylor.gonzalez@example.com', 'Taylor Gonzalez','055-032-3452', 'Nevada', '54263');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.smith@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ursula.smith@example.com', 'Ursula Smith','266-569-2989', 'Michigan', '24353');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.torres@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('vincent.torres@example.com', 'Vincent Torres','292-353-4594', 'Montana', '08393');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.williams@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('wendy.williams@example.com', 'Wendy Williams','856-003-5426', 'Alaska', '77736');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.collins@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('xavier.collins@example.com', 'Xavier Collins','977-923-6516', 'Arizona', '46693');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.stewart@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('yasmine.stewart@example.com', 'Yasmine Stewart','780-942-4463', 'Montana', '10113');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.parker@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('zachary.parker@example.com', 'Zachary Parker','905-149-3175', 'Georgia', '46572');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.lewis@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('abigail.lewis@example.com', 'Abigail Lewis','245-800-4381', 'Louisiana', '06340');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.hall@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('benjamin.hall@example.com', 'Benjamin Hall','353-900-2529', 'Nebraska', '28005');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.white@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('charlotte.white@example.com', 'Charlotte White','831-397-6090', 'Connecticut', '76288');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.johnson@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('daniel.johnson@example.com', 'Daniel Johnson','221-036-6839', 'Maine', '53110');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.davis@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ella.davis@example.com', 'Ella Davis','420-197-4195', 'Oklahoma', '71113');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.anderson@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('frederick.anderson@example.com', 'Frederick Anderson','263-194-4784', 'New York', '46051');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.martin@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('gabrielle.martin@example.com', 'Gabrielle Martin','226-493-1750', 'Arizona', '04825');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.thompson@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('henry.thompson@example.com', 'Henry Thompson','444-587-8585', 'Rhode Island', '31984');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.harris@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('isabella.harris@example.com', 'Isabella Harris','865-165-0381', 'Wisconsin', '46203');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.clark@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('jacob.clark@example.com', 'Jacob Clark','570-509-5354', 'North Carolina', '45471');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.lewis@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('kaitlyn.lewis@example.com', 'Kaitlyn Lewis','080-564-4962', 'North Carolina', '98101');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.young@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('liam.young@example.com', 'Liam Young','217-229-3212', 'Virginia', '27468');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.walker@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('mia.walker@example.com', 'Mia Walker','909-512-6071', 'Massachusetts', '04125');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.garcia@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('nathan.garcia@example.com', 'Nathan Garcia','501-267-9276', 'South Dakota', '09671');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.scott@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('olivia.scott@example.com', 'Olivia Scott','885-196-8784', 'Michigan', '58643');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.adams@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('patrick.adams@example.com', 'Patrick Adams','526-518-3183', 'Illinois', '94323');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.mitchell@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('quinn.mitchell@example.com', 'Quinn Mitchell','162-029-0866', 'Nevada', '37646');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.perez@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('rachel.perez@example.com', 'Rachel Perez','164-756-9138', 'New Hampshire', '80114');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.hayes@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('samuel.hayes@example.com', 'Samuel Hayes','997-371-4366', 'Texas', '84767');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.foster@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('taylor.foster@example.com', 'Taylor Foster','002-905-4109', 'New York', '67277');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.barnes@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('ursula.barnes@example.com', 'Ursula Barnes','366-272-1665', 'Arizona', '53061');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.long@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('vincent.long@example.com', 'Vincent Long','692-929-2833', 'Iowa', '35083');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.coleman@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('wendy.coleman@example.com', 'Wendy Coleman','452-895-6002', 'North Carolina', '97105');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.gray@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('xavier.gray@example.com', 'Xavier Gray','845-562-9327', 'Delaware', '83945');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.king@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('yasmine.king@example.com', 'Yasmine King','936-540-9611', 'Arizona', '48461');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.wright@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('zachary.wright@example.com', 'Zachary Wright','777-781-4933', 'Alabama', '79826');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.carter@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('abigail.carter@example.com', 'Abigail Carter','942-424-1037', 'Texas', '63270');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.robinson@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('benjamin.robinson@example.com', 'Benjamin Robinson','796-500-0540', 'Maine', '28295');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.turner@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('charlotte.turner@example.com', 'Charlotte Turner','406-351-7634', 'Wyoming', '08871');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.hill@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('daniel.hill@example.com', 'Daniel Hill','562-319-7585', 'West Virginia', '68681');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.gonzalez@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('ella.gonzalez@example.com', 'Ella Gonzalez','225-866-9406', 'Vermont', '90087');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.nelson@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('frederick.nelson@example.com', 'Frederick Nelson','850-703-4055', 'North Carolina', '03209');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.parker@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('gabrielle.parker@example.com', 'Gabrielle Parker','645-083-5895', 'Illinois', '14557');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.murphy@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('henry.murphy@example.com', 'Henry Murphy','486-283-8091', 'Hawaii', '68478');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.edwards@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('isabella.edwards@example.com', 'Isabella Edwards','994-143-2377', 'Illinois', '69266');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.stewart@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('jacob.stewart@example.com', 'Jacob Stewart','256-833-7965', 'South Carolina', '45109');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.rogers@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('kaitlyn.rogers@example.com', 'Kaitlyn Rogers','179-104-5642', 'Oregon', '95754');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.cook@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('liam.cook@example.com', 'Liam Cook','145-281-4184', 'Maryland', '09558');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.morris@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('mia.morris@example.com', 'Mia Morris','328-808-3099', 'Florida', '41275');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.young@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('nathan.young@example.com', 'Nathan Young','872-289-4239', 'Illinois', '90222');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.sullivan@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('olivia.sullivan@example.com', 'Olivia Sullivan','320-200-4574', 'Massachusetts', '02967');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.price@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('patrick.price@example.com', 'Patrick Price','477-630-8777', 'West Virginia', '63369');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.baker@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('quinn.baker@example.com', 'Quinn Baker','912-716-0995', 'Oregon', '17506');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.sanchez@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('rachel.sanchez@example.com', 'Rachel Sanchez','965-525-3271', 'Connecticut', '05584');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bennett@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('samuel.bennett@example.com', 'Samuel Bennett','050-443-8276', 'Wyoming', '86508');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.howard@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('taylor.howard@example.com', 'Taylor Howard','017-963-7394', 'Pennsylvania', '62704');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.ramirez@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ursula.ramirez@example.com', 'Ursula Ramirez','732-351-6686', 'Georgia', '91795');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.hayes@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('vincent.hayes@example.com', 'Vincent Hayes','134-145-0043', 'Arkansas', '81934');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.foster@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('wendy.foster@example.com', 'Wendy Foster','174-951-9251', 'Mississippi', '85603');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.barnes@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('xavier.barnes@example.com', 'Xavier Barnes','946-051-6964', 'Wyoming', '88697');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.long@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('yasmine.long@example.com', 'Yasmine Long','626-917-5635', 'Utah', '20435');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.coleman@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('zachary.coleman@example.com', 'Zachary Coleman','916-951-9020', 'Alaska', '42961');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.gray@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('abigail.gray@example.com', 'Abigail Gray','293-075-7516', 'Pennsylvania', '33561');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.russell@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('benjamin.russell@example.com', 'Benjamin Russell','442-304-2808', 'Oregon', '09038');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.perry@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('charlotte.perry@example.com', 'Charlotte Perry','005-378-0425', 'Texas', '66401');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.howard@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('daniel.howard@example.com', 'Daniel Howard','865-140-6235', 'South Carolina', '10116');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.kelly@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ella.kelly@example.com', 'Ella Kelly','004-415-8664', 'Indiana', '91953');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.simmons@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('frederick.simmons@example.com', 'Frederick Simmons','137-763-5393', 'New York', '76385');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.brooks@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('gabrielle.brooks@example.com', 'Gabrielle Brooks','315-141-6750', 'Florida', '51110');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bryant@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('henry.bryant@example.com', 'Henry Bryant','402-296-0551', 'Vermont', '43560');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.wood@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('isabella.wood@example.com', 'Isabella Wood','454-334-0996', 'Alabama', '48934');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.fisher@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('jacob.fisher@example.com', 'Jacob Fisher','737-858-8827', 'Nevada', '70948');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.evans@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('kaitlyn.evans@example.com', 'Kaitlyn Evans','905-698-3350', 'Nebraska', '76867');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bishop@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('liam.bishop@example.com', 'Liam Bishop','677-006-8898', 'Colorado', '13992');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.murray@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('mia.murray@example.com', 'Mia Murray','219-793-3197', 'Florida', '74509');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.cole@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('nathan.cole@example.com', 'Nathan Cole','225-779-3797', 'Michigan', '64906');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.reyes@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('olivia.reyes@example.com', 'Olivia Reyes','997-396-5757', 'Utah', '14155');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mitchell@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('patrick.mitchell@example.com', 'Patrick Mitchell','372-001-4035', 'West Virginia', '49179');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.ross@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('quinn.ross@example.com', 'Quinn Ross','267-210-3494', 'Virginia', '47789');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.diaz@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('rachel.diaz@example.com', 'Rachel Diaz','859-442-2631', 'Montana', '16771');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.patterson@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('samuel.patterson@example.com', 'Samuel Patterson','817-816-6665', 'Texas', '88359');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.flores@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('taylor.flores@example.com', 'Taylor Flores','829-702-6889', 'Rhode Island', '69123');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.alexander@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ursula.alexander@example.com', 'Ursula Alexander','827-660-7760', 'Alaska', '72554');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.sullivan@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('vincent.sullivan@example.com', 'Vincent Sullivan','232-915-7252', 'Arkansas', '65214');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.stevens@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('wendy.stevens@example.com', 'Wendy Stevens','797-649-7837', 'Hawaii', '40503');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.butler@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('xavier.butler@example.com', 'Xavier Butler','705-035-8325', 'Maine', '56077');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('yasmine.nguyen@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('yasmine.nguyen@example.com', 'Yasmine Nguyen','241-733-1501', 'Rhode Island', '24597');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('zachary.powell@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('zachary.powell@example.com', 'Zachary Powell','752-585-7859', 'Virginia', '30830');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('abigail.simmons@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('abigail.simmons@example.com', 'Abigail Simmons','399-325-7549', 'Mississippi', '02666');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('benjamin.bryant@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('benjamin.bryant@example.com', 'Benjamin Bryant','902-231-4977', 'Tennessee', '09046');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('charlotte.roberts@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('charlotte.roberts@example.com', 'Charlotte Roberts','604-931-7862', 'Kansas', '69960');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('daniel.morgan@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('daniel.morgan@example.com', 'Daniel Morgan','113-941-0243', 'New Mexico', '42133');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ella.woodward@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ella.woodward@example.com', 'Ella Woodward','016-444-6995', 'Utah', '05466');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('frederick.henderson@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('frederick.henderson@example.com', 'Frederick Henderson','885-620-0515', 'South Dakota', '37336');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('gabrielle.gardner@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('gabrielle.gardner@example.com', 'Gabrielle Gardner','131-107-4365', 'Michigan', '84628');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('henry.bennett@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('henry.bennett@example.com', 'Henry Bennett','338-066-7329', 'Mississippi', '32133');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('isabella.richardson@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('isabella.richardson@example.com', 'Isabella Richardson','121-476-2098', 'Georgia', '71469');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('jacob.cruz@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('jacob.cruz@example.com', 'Jacob Cruz','358-661-6037', 'South Carolina', '81238');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('kaitlyn.ward@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('kaitlyn.ward@example.com', 'Kaitlyn Ward','252-738-3761', 'Delaware', '16421');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('liam.bailey@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('liam.bailey@example.com', 'Liam Bailey','795-237-7844', 'Vermont', '51183');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('mia.simmons@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('mia.simmons@example.com', 'Mia Simmons','382-946-5163', 'Ohio', '31202');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('nathan.harper@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('nathan.harper@example.com', 'Nathan Harper','697-069-2576', 'Nevada', '86527');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('olivia.morris@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('olivia.morris@example.com', 'Olivia Morris','230-515-5475', 'Louisiana', '34473');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('patrick.mason@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('patrick.mason@example.com', 'Patrick Mason','728-110-2185', 'Oregon', '81423');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('quinn.lopez@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('quinn.lopez@example.com', 'Quinn Lopez','186-207-5970', 'Massachusetts', '61611');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('rachel.powell@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('rachel.powell@example.com', 'Rachel Powell','497-537-6626', 'North Carolina', '32669');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('samuel.bell@example.com', 'Farmer', 'password');
+INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
+VALUES('samuel.bell@example.com', 'Samuel Bell','751-636-1164', 'Iowa', '24768');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('taylor.gonzalez@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('taylor.gonzalez@example.com', 'Taylor Gonzalez','675-873-2216', 'Mississippi', '05554');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('ursula.smith@example.com', 'Distributor', 'password');
+INSERT INTO distributors (distributor_id, distributor_name, distributor_phone, distributor_state, distributor_zipcode)
+VALUES('ursula.smith@example.com', 'Ursula Smith','097-935-6990', 'Illinois', '90394');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('vincent.torres@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('vincent.torres@example.com', 'Vincent Torres','486-865-4624', 'Vermont', '79853');
-INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.williams@example.com', 'Farmer', 'password');
-INSERT INTO farmers (farmer_id, farmer_name, farmer_phone, farmer_state, farmer_zipcode)
-VALUES('wendy.williams@example.com', 'Wendy Williams','717-715-6114', 'Missouri', '15860');
+VALUES('vincent.torres@example.com', 'Vincent Torres','797-825-5223', 'Maryland', '89448');
+INSERT INTO users (user_id, user_type, user_password) VALUES ('wendy.williams@example.com', 'Customer', 'password');
+INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
+VALUES('wendy.williams@example.com', 'Wendy Williams','174-241-5732', 'Connecticut', '52958');
 INSERT INTO users (user_id, user_type, user_password) VALUES ('xavier.collins@example.com', 'Customer', 'password');
 INSERT INTO customers (customer_id, customer_name, customer_phone, customer_state, customer_zipcode)
-VALUES('xavier.collins@example.com', 'Xavier Collins','620-566-1050', 'Idaho', '29771');
+VALUES('xavier.collins@example.com', 'Xavier Collins','615-613-3412', 'Kentucky', '50390');
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('bob.johnson@example.com', 'Cabbage', 385);
+VALUES('grace.taylor@example.com', 'Barley', 214);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('bob.johnson@example.com', 'Oranges', 143);
+VALUES('grace.taylor@example.com', 'Corn', 66);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Tea', 496);
+VALUES('grace.taylor@example.com', 'Oats', 482);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Cottonseed', 380);
+VALUES('grace.taylor@example.com', 'Rice', 493);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Pecans', 154);
+VALUES('grace.taylor@example.com', 'Corn', 468);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Taro', 251);
+VALUES('grace.taylor@example.com', 'Corn', 200);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Zucchini', 394);
+VALUES('olivia.walker@example.com', 'Rice', 432);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Coffee', 300);
+VALUES('olivia.walker@example.com', 'Oats', 332);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Cantaloupe', 114);
+VALUES('olivia.walker@example.com', 'Soybeans', 483);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Blueberries', 317);
+VALUES('olivia.walker@example.com', 'Corn', 455);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Jicama', 434);
+VALUES('olivia.walker@example.com', 'Soybeans', 307);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Bamboo Shoots', 348);
+VALUES('olivia.walker@example.com', 'Corn', 299);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Celery', 152);
+VALUES('olivia.walker@example.com', 'Barley', 252);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Carrots', 421);
+VALUES('olivia.walker@example.com', 'Barley', 486);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Mushrooms', 106);
+VALUES('olivia.walker@example.com', 'Barley', 195);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Barley', 265);
+VALUES('olivia.walker@example.com', 'Oats', 328);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Pumpkins', 35);
+VALUES('olivia.walker@example.com', 'Rice', 267);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Blueberries', 106);
+VALUES('olivia.walker@example.com', 'Corn', 456);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Potatoes', 459);
+VALUES('olivia.walker@example.com', 'Wheat', 342);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('david.davis@example.com', 'Beets', 206);
+VALUES('olivia.walker@example.com', 'Soybeans', 33);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Green Beans', 217);
+VALUES('olivia.walker@example.com', 'Soybeans', 337);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Sugar Cane', 343);
+VALUES('olivia.walker@example.com', 'Rice', 425);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Strawberries', 454);
+VALUES('olivia.walker@example.com', 'Corn', 69);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Broccoli', 237);
+VALUES('olivia.walker@example.com', 'Barley', 227);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Figs', 29);
+VALUES('taylor.perez@example.com', 'Soybeans', 403);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Sorghum', 228);
+VALUES('taylor.perez@example.com', 'Wheat', 484);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Cashews', 261);
+VALUES('taylor.perez@example.com', 'Wheat', 129);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Seaweed', 298);
+VALUES('taylor.perez@example.com', 'Corn', 268);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Coconuts', 430);
+VALUES('benjamin.carter@example.com', 'Soybeans', 121);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Papayas', 468);
+VALUES('benjamin.carter@example.com', 'Corn', 284);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Grapes', 409);
+VALUES('benjamin.carter@example.com', 'Corn', 226);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Lima Beans', 364);
+VALUES('benjamin.carter@example.com', 'Barley', 486);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Broccoli', 62);
+VALUES('benjamin.carter@example.com', 'Soybeans', 356);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('megan.lewis@example.com', 'Blueberries', 141);
+VALUES('benjamin.carter@example.com', 'Oats', 240);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quincy.white@example.com', 'Amaranth', 149);
+VALUES('benjamin.carter@example.com', 'Oats', 148);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quincy.white@example.com', 'Vanilla', 33);
+VALUES('benjamin.carter@example.com', 'Soybeans', 279);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quincy.white@example.com', 'Chickpeas', 473);
+VALUES('benjamin.carter@example.com', 'Rice', 247);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quincy.white@example.com', 'Taro', 67);
+VALUES('benjamin.carter@example.com', 'Wheat', 236);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quincy.white@example.com', 'Peppers', 304);
+VALUES('benjamin.carter@example.com', 'Soybeans', 345);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quincy.white@example.com', 'Sesame', 284);
+VALUES('benjamin.carter@example.com', 'Corn', 328);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Safflower', 339);
+VALUES('benjamin.carter@example.com', 'Rice', 265);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Grapes', 174);
+VALUES('benjamin.carter@example.com', 'Oats', 257);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Pears', 358);
+VALUES('benjamin.carter@example.com', 'Soybeans', 472);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Lychee', 112);
+VALUES('benjamin.carter@example.com', 'Corn', 285);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Coconuts', 316);
+VALUES('benjamin.carter@example.com', 'Oats', 250);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Cottonseed', 120);
+VALUES('jacob.edwards@example.com', 'Corn', 121);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('taylor.perez@example.com', 'Kale', 171);
+VALUES('jacob.edwards@example.com', 'Soybeans', 192);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Broccoli', 478);
+VALUES('jacob.edwards@example.com', 'Soybeans', 252);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Rhubarb', 69);
+VALUES('jacob.edwards@example.com', 'Rice', 334);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Eggplant', 240);
+VALUES('jacob.edwards@example.com', 'Oats', 86);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Cantaloupe', 96);
+VALUES('jacob.edwards@example.com', 'Barley', 107);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Green Beans', 267);
+VALUES('jacob.edwards@example.com', 'Oats', 169);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Garlic', 337);
+VALUES('jacob.edwards@example.com', 'Soybeans', 408);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Apples', 317);
+VALUES('jacob.edwards@example.com', 'Oats', 337);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Bamboo Shoots', 353);
+VALUES('jacob.edwards@example.com', 'Barley', 222);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Dulse', 244);
+VALUES('olivia.sullivan@example.com', 'Corn', 211);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Passion Fruit', 293);
+VALUES('olivia.sullivan@example.com', 'Corn', 24);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Spirulina', 106);
+VALUES('olivia.sullivan@example.com', 'Corn', 47);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.garcia@example.com', 'Cabbage', 247);
+VALUES('olivia.sullivan@example.com', 'Soybeans', 110);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Rhubarb', 8);
+VALUES('olivia.sullivan@example.com', 'Soybeans', 498);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Peas', 220);
+VALUES('olivia.sullivan@example.com', 'Corn', 308);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Kale', 469);
+VALUES('olivia.sullivan@example.com', 'Barley', 189);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Peaches', 183);
+VALUES('olivia.sullivan@example.com', 'Barley', 434);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Barley', 239);
+VALUES('olivia.sullivan@example.com', 'Soybeans', 207);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Bamboo Shoots', 11);
+VALUES('olivia.sullivan@example.com', 'Soybeans', 476);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.adams@example.com', 'Sugarcane', 467);
+VALUES('olivia.sullivan@example.com', 'Soybeans', 164);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Plums', 475);
+VALUES('olivia.sullivan@example.com', 'Wheat', 488);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Sugarcane', 67);
+VALUES('olivia.sullivan@example.com', 'Barley', 245);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Papayas', 442);
+VALUES('olivia.sullivan@example.com', 'Corn', 447);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Lychee', 455);
+VALUES('olivia.sullivan@example.com', 'Barley', 354);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Peanuts', 330);
+VALUES('olivia.sullivan@example.com', 'Rice', 55);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Spinach', 135);
+VALUES('olivia.sullivan@example.com', 'Barley', 314);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Black Beans', 388);
+VALUES('rachel.sanchez@example.com', 'Soybeans', 297);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Guava', 405);
+VALUES('rachel.sanchez@example.com', 'Wheat', 82);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Potatoes', 332);
+VALUES('rachel.sanchez@example.com', 'Corn', 404);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Quinoa', 126);
+VALUES('rachel.sanchez@example.com', 'Rice', 258);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.green@example.com', 'Amaranth', 326);
+VALUES('taylor.howard@example.com', 'Corn', 219);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Dates', 329);
+VALUES('taylor.howard@example.com', 'Oats', 488);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Zucchini', 145);
+VALUES('taylor.howard@example.com', 'Barley', 403);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Blueberries', 38);
+VALUES('taylor.howard@example.com', 'Rice', 420);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Blueberries', 303);
+VALUES('taylor.howard@example.com', 'Wheat', 230);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Oats', 272);
+VALUES('taylor.howard@example.com', 'Corn', 238);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Mangoes', 286);
+VALUES('taylor.howard@example.com', 'Corn', 478);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Cucumbers', 72);
+VALUES('taylor.howard@example.com', 'Soybeans', 335);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Dates', 458);
+VALUES('yasmine.long@example.com', 'Corn', 1);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Cottonseed', 124);
+VALUES('yasmine.long@example.com', 'Barley', 32);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Bamboo Shoots', 405);
+VALUES('yasmine.long@example.com', 'Barley', 128);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Artichokes', 11);
+VALUES('yasmine.long@example.com', 'Rice', 280);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Macadamia Nuts', 358);
+VALUES('yasmine.long@example.com', 'Oats', 40);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Cassava', 62);
+VALUES('yasmine.long@example.com', 'Wheat', 248);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Cotton', 380);
+VALUES('yasmine.long@example.com', 'Wheat', 495);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Lentils', 154);
+VALUES('yasmine.long@example.com', 'Barley', 95);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Dulse', 121);
+VALUES('yasmine.long@example.com', 'Corn', 206);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Cotton', 50);
+VALUES('yasmine.long@example.com', 'Soybeans', 148);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Truffles', 335);
+VALUES('yasmine.long@example.com', 'Soybeans', 457);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.carter@example.com', 'Kale', 160);
+VALUES('yasmine.long@example.com', 'Corn', 480);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Cranberries', 275);
+VALUES('yasmine.long@example.com', 'Rice', 228);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Onions', 448);
+VALUES('abigail.gray@example.com', 'Corn', 151);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Almonds', 22);
+VALUES('abigail.gray@example.com', 'Wheat', 218);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Cocoa', 233);
+VALUES('abigail.gray@example.com', 'Oats', 378);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Kale', 498);
+VALUES('abigail.gray@example.com', 'Soybeans', 327);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Peaches', 111);
+VALUES('abigail.gray@example.com', 'Wheat', 171);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Nectarines', 227);
+VALUES('abigail.gray@example.com', 'Wheat', 202);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Carrots', 391);
+VALUES('benjamin.russell@example.com', 'Wheat', 7);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Cocoa', 384);
+VALUES('benjamin.russell@example.com', 'Corn', 183);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Honeydew Melon', 338);
+VALUES('benjamin.russell@example.com', 'Wheat', 34);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Mangoes', 399);
+VALUES('benjamin.russell@example.com', 'Corn', 127);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.robinson@example.com', 'Quinoa', 50);
+VALUES('benjamin.russell@example.com', 'Wheat', 35);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Cherries', 392);
+VALUES('benjamin.russell@example.com', 'Corn', 342);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Cotton', 197);
+VALUES('benjamin.russell@example.com', 'Soybeans', 218);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Walnuts', 217);
+VALUES('benjamin.russell@example.com', 'Corn', 70);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Apples', 135);
+VALUES('benjamin.russell@example.com', 'Soybeans', 286);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Cherries', 163);
+VALUES('benjamin.russell@example.com', 'Soybeans', 21);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Chia Seeds', 107);
+VALUES('benjamin.russell@example.com', 'Rice', 277);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Okra', 210);
+VALUES('daniel.howard@example.com', 'Corn', 69);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Cherries', 169);
+VALUES('daniel.howard@example.com', 'Barley', 382);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Broccoli', 424);
+VALUES('daniel.howard@example.com', 'Rice', 338);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Dulse', 434);
+VALUES('daniel.howard@example.com', 'Oats', 270);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Coffee', 423);
+VALUES('daniel.howard@example.com', 'Barley', 496);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Radishes', 226);
+VALUES('daniel.howard@example.com', 'Wheat', 415);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Peanuts', 476);
+VALUES('daniel.howard@example.com', 'Corn', 104);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Onions', 84);
+VALUES('daniel.howard@example.com', 'Oats', 458);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Macadamia Nuts', 292);
+VALUES('daniel.howard@example.com', 'Soybeans', 423);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Pineapples', 224);
+VALUES('daniel.howard@example.com', 'Corn', 156);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Sunflowers', 280);
+VALUES('daniel.howard@example.com', 'Corn', 91);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Strawberries', 202);
+VALUES('daniel.howard@example.com', 'Barley', 132);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.turner@example.com', 'Spirulina', 218);
+VALUES('daniel.howard@example.com', 'Corn', 59);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.nelson@example.com', 'Rice', 71);
+VALUES('daniel.howard@example.com', 'Wheat', 86);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.nelson@example.com', 'Garlic', 256);
+VALUES('daniel.howard@example.com', 'Oats', 371);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.nelson@example.com', 'Dates', 482);
+VALUES('gabrielle.brooks@example.com', 'Soybeans', 320);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.nelson@example.com', 'Pears', 186);
+VALUES('henry.bryant@example.com', 'Barley', 372);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.nelson@example.com', 'Okra', 52);
+VALUES('henry.bryant@example.com', 'Oats', 431);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.nelson@example.com', 'Okra', 83);
+VALUES('henry.bryant@example.com', 'Wheat', 170);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Sunflowers', 492);
+VALUES('henry.bryant@example.com', 'Barley', 373);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Kidney Beans', 372);
+VALUES('henry.bryant@example.com', 'Corn', 14);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Green Beans', 290);
+VALUES('henry.bryant@example.com', 'Corn', 163);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Onions', 30);
+VALUES('henry.bryant@example.com', 'Rice', 50);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Bamboo Shoots', 105);
+VALUES('henry.bryant@example.com', 'Wheat', 461);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Tea', 47);
+VALUES('henry.bryant@example.com', 'Wheat', 79);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Nopales', 448);
+VALUES('henry.bryant@example.com', 'Barley', 394);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Raspberries', 191);
+VALUES('henry.bryant@example.com', 'Wheat', 372);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Broccoli', 373);
+VALUES('henry.bryant@example.com', 'Wheat', 246);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Bok Choy', 108);
+VALUES('henry.bryant@example.com', 'Soybeans', 57);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Lettuce', 463);
+VALUES('henry.bryant@example.com', 'Rice', 331);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.edwards@example.com', 'Cherries', 83);
+VALUES('henry.bryant@example.com', 'Oats', 396);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Spirulina', 485);
+VALUES('henry.bryant@example.com', 'Oats', 227);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Chia Seeds', 278);
+VALUES('henry.bryant@example.com', 'Oats', 341);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Eggplant', 422);
+VALUES('henry.bryant@example.com', 'Barley', 224);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Apricots', 123);
+VALUES('henry.bryant@example.com', 'Corn', 211);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Safflower', 400);
+VALUES('jacob.fisher@example.com', 'Corn', 336);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Strawberries', 251);
+VALUES('jacob.fisher@example.com', 'Corn', 305);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Papayas', 284);
+VALUES('samuel.patterson@example.com', 'Corn', 48);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Spirulina', 250);
+VALUES('samuel.patterson@example.com', 'Oats', 455);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Peas', 439);
+VALUES('samuel.patterson@example.com', 'Rice', 478);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Cranberries', 392);
+VALUES('samuel.patterson@example.com', 'Corn', 414);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Sugar Cane', 435);
+VALUES('samuel.patterson@example.com', 'Oats', 289);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Grapes', 162);
+VALUES('samuel.patterson@example.com', 'Oats', 404);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Wheat', 367);
+VALUES('samuel.patterson@example.com', 'Soybeans', 396);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Hemp', 139);
+VALUES('samuel.patterson@example.com', 'Barley', 105);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Onions', 461);
+VALUES('samuel.patterson@example.com', 'Soybeans', 338);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Sorghum', 108);
+VALUES('samuel.patterson@example.com', 'Rice', 377);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.morris@example.com', 'Dulse', 277);
+VALUES('vincent.sullivan@example.com', 'Soybeans', 484);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Turmeric', 498);
+VALUES('vincent.sullivan@example.com', 'Corn', 398);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Almonds', 226);
+VALUES('vincent.sullivan@example.com', 'Rice', 102);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Macadamia Nuts', 21);
+VALUES('vincent.sullivan@example.com', 'Oats', 208);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Apples', 53);
+VALUES('vincent.sullivan@example.com', 'Oats', 26);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Strawberries', 231);
+VALUES('vincent.sullivan@example.com', 'Corn', 357);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Carrots', 167);
+VALUES('vincent.sullivan@example.com', 'Wheat', 250);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Ginger', 185);
+VALUES('vincent.sullivan@example.com', 'Oats', 11);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Kiwifruit', 165);
+VALUES('vincent.sullivan@example.com', 'Rice', 488);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Pecans', 495);
+VALUES('vincent.sullivan@example.com', 'Corn', 208);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Cherries', 491);
+VALUES('vincent.sullivan@example.com', 'Soybeans', 137);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Eggplant', 113);
+VALUES('vincent.sullivan@example.com', 'Wheat', 86);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Coconuts', 472);
+VALUES('vincent.sullivan@example.com', 'Corn', 52);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Raspberries', 9);
+VALUES('vincent.sullivan@example.com', 'Rice', 194);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Passion Fruit', 359);
+VALUES('vincent.sullivan@example.com', 'Oats', 230);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Turnips', 101);
+VALUES('vincent.sullivan@example.com', 'Wheat', 111);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Squash', 129);
+VALUES('abigail.simmons@example.com', 'Barley', 372);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Soybeans', 376);
+VALUES('abigail.simmons@example.com', 'Barley', 98);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Kelp', 130);
+VALUES('abigail.simmons@example.com', 'Wheat', 283);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Okra', 169);
+VALUES('abigail.simmons@example.com', 'Oats', 438);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Cassava', 324);
+VALUES('abigail.simmons@example.com', 'Rice', 464);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Guava', 156);
+VALUES('abigail.simmons@example.com', 'Rice', 339);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Figs', 44);
+VALUES('abigail.simmons@example.com', 'Oats', 202);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Garlic', 416);
+VALUES('abigail.simmons@example.com', 'Soybeans', 437);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Guava', 402);
+VALUES('abigail.simmons@example.com', 'Oats', 103);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Almonds', 252);
+VALUES('ella.woodward@example.com', 'Wheat', 344);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Pinto Beans', 307);
+VALUES('ella.woodward@example.com', 'Corn', 213);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Cherries', 497);
+VALUES('ella.woodward@example.com', 'Soybeans', 281);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Seaweed', 441);
+VALUES('ella.woodward@example.com', 'Oats', 93);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Coconuts', 435);
+VALUES('ella.woodward@example.com', 'Corn', 233);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Celery', 241);
+VALUES('ella.woodward@example.com', 'Rice', 418);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Bamboo Shoots', 28);
+VALUES('ella.woodward@example.com', 'Wheat', 85);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Cherries', 83);
+VALUES('ella.woodward@example.com', 'Oats', 115);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.barnes@example.com', 'Jicama', 22);
+VALUES('ella.woodward@example.com', 'Barley', 216);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Jicama', 305);
+VALUES('ella.woodward@example.com', 'Corn', 302);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Wheat', 475);
+VALUES('ella.woodward@example.com', 'Corn', 71);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Honeydew Melon', 259);
+VALUES('ella.woodward@example.com', 'Corn', 213);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Pistachios', 258);
+VALUES('ella.woodward@example.com', 'Rice', 46);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Chia Seeds', 245);
+VALUES('ella.woodward@example.com', 'Oats', 278);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Apricots', 200);
+VALUES('ella.woodward@example.com', 'Soybeans', 499);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Jicama', 369);
+VALUES('ella.woodward@example.com', 'Rice', 488);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Lettuce', 167);
+VALUES('frederick.henderson@example.com', 'Oats', 497);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Pears', 229);
+VALUES('frederick.henderson@example.com', 'Rice', 338);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Garlic', 391);
+VALUES('frederick.henderson@example.com', 'Oats', 63);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Lentils', 226);
+VALUES('frederick.henderson@example.com', 'Wheat', 186);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Figs', 176);
+VALUES('henry.bennett@example.com', 'Rice', 4);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.long@example.com', 'Lima Beans', 365);
+VALUES('henry.bennett@example.com', 'Corn', 350);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Squash', 181);
+VALUES('henry.bennett@example.com', 'Wheat', 467);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Flax', 21);
+VALUES('henry.bennett@example.com', 'Wheat', 49);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Apricots', 343);
+VALUES('henry.bennett@example.com', 'Rice', 276);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Seaweed', 173);
+VALUES('henry.bennett@example.com', 'Soybeans', 191);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Celery', 4);
+VALUES('henry.bennett@example.com', 'Oats', 373);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Soybeans', 384);
+VALUES('henry.bennett@example.com', 'Rice', 264);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Figs', 143);
+VALUES('henry.bennett@example.com', 'Rice', 162);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.coleman@example.com', 'Mangoes', 172);
+VALUES('henry.bennett@example.com', 'Rice', 384);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Turnips', 206);
+VALUES('henry.bennett@example.com', 'Rice', 482);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Truffles', 190);
+VALUES('henry.bennett@example.com', 'Rice', 223);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Garlic', 72);
+VALUES('henry.bennett@example.com', 'Wheat', 172);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Asparagus', 6);
+VALUES('henry.bennett@example.com', 'Barley', 48);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Macadamia Nuts', 259);
+VALUES('henry.bennett@example.com', 'Rice', 355);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Rapeseed', 282);
+VALUES('henry.bennett@example.com', 'Oats', 264);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.perry@example.com', 'Peaches', 69);
+VALUES('kaitlyn.ward@example.com', 'Corn', 422);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.brooks@example.com', 'Oranges', 467);
+VALUES('kaitlyn.ward@example.com', 'Corn', 440);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.brooks@example.com', 'Amaranth', 183);
+VALUES('kaitlyn.ward@example.com', 'Soybeans', 225);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.brooks@example.com', 'Macadamia Nuts', 326);
+VALUES('kaitlyn.ward@example.com', 'Barley', 161);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.brooks@example.com', 'Vanilla', 396);
+VALUES('kaitlyn.ward@example.com', 'Oats', 347);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('gabrielle.brooks@example.com', 'Dates', 393);
+VALUES('kaitlyn.ward@example.com', 'Soybeans', 224);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Sugarcane', 36);
+VALUES('kaitlyn.ward@example.com', 'Oats', 430);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Passion Fruit', 143);
+VALUES('kaitlyn.ward@example.com', 'Wheat', 311);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Blueberries', 94);
+VALUES('kaitlyn.ward@example.com', 'Wheat', 488);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Pumpkins', 58);
+VALUES('kaitlyn.ward@example.com', 'Barley', 229);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Peaches', 477);
+VALUES('kaitlyn.ward@example.com', 'Barley', 33);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Pistachios', 259);
+VALUES('kaitlyn.ward@example.com', 'Rice', 323);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Safflower', 50);
+VALUES('patrick.mason@example.com', 'Barley', 114);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Truffles', 286);
+VALUES('patrick.mason@example.com', 'Soybeans', 428);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Tomatoes', 91);
+VALUES('patrick.mason@example.com', 'Wheat', 222);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Okra', 208);
+VALUES('patrick.mason@example.com', 'Barley', 439);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Kidney Beans', 168);
+VALUES('patrick.mason@example.com', 'Soybeans', 187);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Beets', 248);
+VALUES('patrick.mason@example.com', 'Soybeans', 236);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Beets', 205);
+VALUES('patrick.mason@example.com', 'Wheat', 367);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Barley', 157);
+VALUES('patrick.mason@example.com', 'Barley', 430);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.bryant@example.com', 'Passion Fruit', 416);
+VALUES('patrick.mason@example.com', 'Barley', 365);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Spirulina', 470);
+VALUES('patrick.mason@example.com', 'Barley', 234);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Cranberries', 241);
+VALUES('patrick.mason@example.com', 'Barley', 24);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Green Beans', 87);
+VALUES('patrick.mason@example.com', 'Wheat', 417);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Strawberries', 172);
+VALUES('patrick.mason@example.com', 'Corn', 8);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Okra', 153);
+VALUES('patrick.mason@example.com', 'Corn', 58);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Grapes', 360);
+VALUES('patrick.mason@example.com', 'Rice', 352);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Lima Beans', 491);
+VALUES('taylor.gonzalez@example.com', 'Corn', 360);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Lima Beans', 99);
+VALUES('taylor.gonzalez@example.com', 'Wheat', 20);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Hazelnuts', 402);
+VALUES('taylor.gonzalez@example.com', 'Rice', 387);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Hazelnuts', 145);
+VALUES('taylor.gonzalez@example.com', 'Rice', 415);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Grapes', 42);
+VALUES('taylor.gonzalez@example.com', 'Wheat', 173);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Cucumbers', 498);
+VALUES('taylor.gonzalez@example.com', 'Soybeans', 217);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Nopales', 239);
+VALUES('taylor.gonzalez@example.com', 'Oats', 237);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.wood@example.com', 'Peanuts', 7);
+VALUES('taylor.gonzalez@example.com', 'Wheat', 22);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Green Beans', 225);
+VALUES('taylor.gonzalez@example.com', 'Oats', 176);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Strawberries', 141);
+VALUES('taylor.gonzalez@example.com', 'Corn', 265);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Potatoes', 93);
+VALUES('taylor.gonzalez@example.com', 'Corn', 90);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Taro', 160);
+VALUES('taylor.gonzalez@example.com', 'Corn', 65);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Avocados', 94);
+VALUES('taylor.gonzalez@example.com', 'Soybeans', 138);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Kidney Beans', 247);
+VALUES('zachary.parker@example.com', 'Soybeans', 227);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Flax', 396);
+VALUES('zachary.parker@example.com', 'Corn', 315);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Walnuts', 367);
+VALUES('zachary.parker@example.com', 'Rice', 439);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Barley', 48);
+VALUES('zachary.parker@example.com', 'Corn', 258);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Bamboo Shoots', 488);
+VALUES('zachary.parker@example.com', 'Wheat', 386);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Cocoa', 352);
+VALUES('daniel.johnson@example.com', 'Barley', 300);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Blueberries', 482);
+VALUES('daniel.johnson@example.com', 'Corn', 209);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('nathan.cole@example.com', 'Rhubarb', 279);
+VALUES('daniel.johnson@example.com', 'Oats', 389);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Lentils', 474);
+VALUES('daniel.johnson@example.com', 'Corn', 32);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Sesame', 104);
+VALUES('daniel.johnson@example.com', 'Barley', 39);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Broccoli', 13);
+VALUES('jacob.clark@example.com', 'Rice', 18);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Broccoli', 330);
+VALUES('jacob.clark@example.com', 'Wheat', 52);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Nopales', 148);
+VALUES('jacob.clark@example.com', 'Barley', 496);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Pumpkins', 170);
+VALUES('jacob.clark@example.com', 'Rice', 79);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Safflower', 38);
+VALUES('jacob.clark@example.com', 'Wheat', 326);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Blueberries', 27);
+VALUES('jacob.clark@example.com', 'Soybeans', 304);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Watercress', 400);
+VALUES('jacob.clark@example.com', 'Barley', 306);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Tea', 9);
+VALUES('jacob.clark@example.com', 'Corn', 128);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Flax', 392);
+VALUES('jacob.clark@example.com', 'Corn', 346);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Watercress', 460);
+VALUES('jacob.clark@example.com', 'Rice', 480);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('vincent.sullivan@example.com', 'Black Beans', 304);
+VALUES('jacob.clark@example.com', 'Wheat', 318);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.butler@example.com', 'Lettuce', 141);
+VALUES('jacob.clark@example.com', 'Rice', 46);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.butler@example.com', 'Squash', 21);
+VALUES('jacob.clark@example.com', 'Soybeans', 297);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.butler@example.com', 'Oranges', 433);
+VALUES('jacob.clark@example.com', 'Oats', 40);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.butler@example.com', 'Cashews', 217);
+VALUES('jacob.clark@example.com', 'Barley', 62);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.butler@example.com', 'Green Beans', 323);
+VALUES('jacob.clark@example.com', 'Rice', 136);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.cruz@example.com', 'Almonds', 441);
+VALUES('jacob.clark@example.com', 'Corn', 240);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.cruz@example.com', 'Durian', 414);
+VALUES('jacob.clark@example.com', 'Corn', 119);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.cruz@example.com', 'Chickpeas', 364);
+VALUES('mia.walker@example.com', 'Soybeans', 245);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.cruz@example.com', 'Almonds', 383);
+VALUES('mia.walker@example.com', 'Soybeans', 252);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.cruz@example.com', 'Broccoli', 212);
+VALUES('mia.walker@example.com', 'Soybeans', 273);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bailey@example.com', 'Turnips', 389);
+VALUES('mia.walker@example.com', 'Barley', 77);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bailey@example.com', 'Avocados', 40);
+VALUES('mia.walker@example.com', 'Rice', 301);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Wheat', 296);
+VALUES('mia.walker@example.com', 'Corn', 229);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Peaches', 496);
+VALUES('olivia.scott@example.com', 'Oats', 96);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Coconuts', 234);
+VALUES('olivia.scott@example.com', 'Soybeans', 105);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Peppers', 309);
+VALUES('olivia.scott@example.com', 'Rice', 52);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Barley', 186);
+VALUES('olivia.scott@example.com', 'Oats', 172);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Beets', 325);
+VALUES('olivia.scott@example.com', 'Rice', 411);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Peaches', 213);
+VALUES('olivia.scott@example.com', 'Soybeans', 444);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Taro', 372);
+VALUES('olivia.scott@example.com', 'Corn', 32);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Tea', 167);
+VALUES('olivia.scott@example.com', 'Soybeans', 464);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Green Beans', 155);
+VALUES('olivia.scott@example.com', 'Oats', 244);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Cucumbers', 450);
+VALUES('olivia.scott@example.com', 'Soybeans', 319);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Potatoes', 181);
+VALUES('olivia.scott@example.com', 'Rice', 308);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Figs', 479);
+VALUES('olivia.scott@example.com', 'Wheat', 272);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Cantaloupe', 63);
+VALUES('olivia.scott@example.com', 'Rice', 424);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Sweet Potatoes', 273);
+VALUES('olivia.scott@example.com', 'Rice', 289);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Blackberries', 420);
+VALUES('olivia.scott@example.com', 'Barley', 482);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Cottonseed', 231);
+VALUES('olivia.scott@example.com', 'Oats', 473);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Watercress', 228);
+VALUES('olivia.scott@example.com', 'Rice', 295);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Chickpeas', 287);
+VALUES('rachel.perez@example.com', 'Corn', 377);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.simmons@example.com', 'Cocoa', 459);
+VALUES('ursula.barnes@example.com', 'Corn', 216);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Peaches', 197);
+VALUES('ursula.barnes@example.com', 'Barley', 16);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Tea', 55);
+VALUES('ursula.barnes@example.com', 'Soybeans', 286);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Blackberries', 286);
+VALUES('ursula.barnes@example.com', 'Soybeans', 76);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Tea', 398);
+VALUES('ursula.barnes@example.com', 'Rice', 193);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Squash', 34);
+VALUES('ursula.barnes@example.com', 'Corn', 311);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Oranges', 497);
+VALUES('ursula.barnes@example.com', 'Oats', 8);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Cranberries', 329);
+VALUES('ursula.barnes@example.com', 'Barley', 314);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Safflower', 310);
+VALUES('ursula.barnes@example.com', 'Oats', 110);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Quinoa', 252);
+VALUES('ursula.barnes@example.com', 'Rice', 71);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Beets', 252);
+VALUES('ursula.barnes@example.com', 'Wheat', 225);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Turmeric', 129);
+VALUES('ursula.barnes@example.com', 'Barley', 379);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Guava', 492);
+VALUES('ursula.barnes@example.com', 'Soybeans', 244);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Pears', 453);
+VALUES('ursula.barnes@example.com', 'Barley', 56);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Celery', 330);
+VALUES('yasmine.king@example.com', 'Corn', 217);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Seaweed', 415);
+VALUES('yasmine.king@example.com', 'Oats', 92);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Mangoes', 400);
+VALUES('yasmine.king@example.com', 'Wheat', 119);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Broccoli', 383);
+VALUES('yasmine.king@example.com', 'Soybeans', 411);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Papayas', 453);
+VALUES('yasmine.king@example.com', 'Oats', 89);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Bamboo Shoots', 337);
+VALUES('yasmine.king@example.com', 'Corn', 133);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Cauliflower', 213);
+VALUES('yasmine.king@example.com', 'Oats', 234);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Coconuts', 370);
+VALUES('yasmine.king@example.com', 'Rice', 156);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Cotton', 261);
+VALUES('yasmine.king@example.com', 'Oats', 15);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Cashews', 476);
+VALUES('yasmine.king@example.com', 'Wheat', 281);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Grapes', 193);
+VALUES('yasmine.king@example.com', 'Oats', 272);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Cabbage', 248);
+VALUES('yasmine.king@example.com', 'Rice', 445);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Almonds', 74);
+VALUES('yasmine.king@example.com', 'Wheat', 496);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Onions', 3);
+VALUES('yasmine.king@example.com', 'Oats', 184);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Truffles', 335);
+VALUES('yasmine.king@example.com', 'Wheat', 404);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Radishes', 408);
+VALUES('yasmine.king@example.com', 'Oats', 179);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Kidney Beans', 421);
+VALUES('yasmine.king@example.com', 'Oats', 239);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Pears', 412);
+VALUES('ella.gonzalez@example.com', 'Barley', 79);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Peanuts', 73);
+VALUES('ella.gonzalez@example.com', 'Corn', 102);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Walnuts', 38);
+VALUES('ella.gonzalez@example.com', 'Soybeans', 243);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Celery', 250);
+VALUES('ella.gonzalez@example.com', 'Soybeans', 89);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Corn', 130);
+VALUES('ella.gonzalez@example.com', 'Oats', 101);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Raspberries', 142);
+VALUES('ella.gonzalez@example.com', 'Oats', 29);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Barley', 289);
+VALUES('ella.gonzalez@example.com', 'Soybeans', 64);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Pecans', 469);
+VALUES('ella.gonzalez@example.com', 'Wheat', 319);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Choy Sum', 97);
+VALUES('isabella.edwards@example.com', 'Corn', 362);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Safflower', 259);
+VALUES('isabella.edwards@example.com', 'Rice', 267);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Amaranth', 1);
+VALUES('isabella.edwards@example.com', 'Rice', 368);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Oranges', 48);
+VALUES('isabella.edwards@example.com', 'Wheat', 133);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Soybeans', 374);
+VALUES('isabella.edwards@example.com', 'Wheat', 295);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Jackfruit', 428);
+VALUES('isabella.edwards@example.com', 'Soybeans', 184);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Pinto Beans', 255);
+VALUES('isabella.edwards@example.com', 'Rice', 206);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Coffee', 341);
+VALUES('isabella.edwards@example.com', 'Wheat', 217);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Almonds', 181);
+VALUES('isabella.edwards@example.com', 'Wheat', 40);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Blackberries', 481);
+VALUES('kaitlyn.rogers@example.com', 'Corn', 60);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Flax', 60);
+VALUES('kaitlyn.rogers@example.com', 'Wheat', 229);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('xavier.collins@example.com', 'Vanilla', 205);
+VALUES('kaitlyn.rogers@example.com', 'Rice', 355);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Spirulina', 465);
+VALUES('kaitlyn.rogers@example.com', 'Barley', 161);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Figs', 194);
+VALUES('kaitlyn.rogers@example.com', 'Rice', 53);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Cherries', 22);
+VALUES('mia.morris@example.com', 'Corn', 143);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Ginger', 254);
+VALUES('olivia.sullivan@example.com', 'Barley', 279);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Oranges', 410);
+VALUES('olivia.sullivan@example.com', 'Corn', 183);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Eggplant', 294);
+VALUES('olivia.sullivan@example.com', 'Corn', 357);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Sesame', 101);
+VALUES('olivia.sullivan@example.com', 'Wheat', 138);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Zucchini', 2);
+VALUES('olivia.sullivan@example.com', 'Wheat', 352);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Macadamia Nuts', 487);
+VALUES('olivia.sullivan@example.com', 'Corn', 82);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Watercress', 38);
+VALUES('olivia.sullivan@example.com', 'Barley', 469);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Soybeans', 134);
+VALUES('olivia.sullivan@example.com', 'Soybeans', 153);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('yasmine.stewart@example.com', 'Spinach', 260);
+VALUES('olivia.sullivan@example.com', 'Oats', 263);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Peanuts', 241);
+VALUES('olivia.sullivan@example.com', 'Wheat', 69);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Pineapples', 287);
+VALUES('olivia.sullivan@example.com', 'Barley', 494);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Passion Fruit', 477);
+VALUES('olivia.sullivan@example.com', 'Oats', 111);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Walnuts', 53);
+VALUES('olivia.sullivan@example.com', 'Barley', 302);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Figs', 479);
+VALUES('zachary.coleman@example.com', 'Oats', 406);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Corn', 169);
+VALUES('zachary.coleman@example.com', 'Rice', 447);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Walnuts', 179);
+VALUES('zachary.coleman@example.com', 'Wheat', 213);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Wheat', 44);
+VALUES('zachary.coleman@example.com', 'Wheat', 333);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Durian', 66);
+VALUES('zachary.coleman@example.com', 'Rice', 356);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Zucchini', 73);
+VALUES('zachary.coleman@example.com', 'Wheat', 449);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Flax', 342);
+VALUES('zachary.coleman@example.com', 'Oats', 382);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Pumpkins', 208);
+VALUES('zachary.coleman@example.com', 'Wheat', 472);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Lettuce', 389);
+VALUES('zachary.coleman@example.com', 'Barley', 249);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('charlotte.white@example.com', 'Watercress', 45);
+VALUES('zachary.coleman@example.com', 'Oats', 362);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ella.davis@example.com', 'Pinto Beans', 42);
+VALUES('zachary.coleman@example.com', 'Soybeans', 260);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ella.davis@example.com', 'Vanilla', 398);
+VALUES('zachary.coleman@example.com', 'Wheat', 71);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ella.davis@example.com', 'Cassava', 383);
+VALUES('zachary.coleman@example.com', 'Barley', 328);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ella.davis@example.com', 'Avocados', 487);
+VALUES('zachary.coleman@example.com', 'Barley', 428);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Raspberries', 386);
+VALUES('abigail.gray@example.com', 'Rice', 266);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Lentils', 342);
+VALUES('abigail.gray@example.com', 'Soybeans', 134);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Sorghum', 60);
+VALUES('abigail.gray@example.com', 'Wheat', 160);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Peanuts', 185);
+VALUES('abigail.gray@example.com', 'Barley', 81);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Dates', 99);
+VALUES('abigail.gray@example.com', 'Soybeans', 459);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Mushrooms', 496);
+VALUES('abigail.gray@example.com', 'Oats', 314);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Cabbage', 64);
+VALUES('abigail.gray@example.com', 'Corn', 109);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Tomatoes', 68);
+VALUES('abigail.gray@example.com', 'Soybeans', 354);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Peanuts', 299);
+VALUES('frederick.simmons@example.com', 'Rice', 49);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Lentils', 251);
+VALUES('frederick.simmons@example.com', 'Barley', 303);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Chia Seeds', 130);
+VALUES('frederick.simmons@example.com', 'Oats', 99);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Pistachios', 83);
+VALUES('frederick.simmons@example.com', 'Wheat', 136);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Mangoes', 361);
+VALUES('frederick.simmons@example.com', 'Barley', 227);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Kale', 250);
+VALUES('frederick.simmons@example.com', 'Barley', 96);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.thompson@example.com', 'Carrots', 334);
+VALUES('frederick.simmons@example.com', 'Barley', 142);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Quinoa', 271);
+VALUES('frederick.simmons@example.com', 'Barley', 151);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Dates', 388);
+VALUES('frederick.simmons@example.com', 'Barley', 360);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Pistachios', 160);
+VALUES('frederick.simmons@example.com', 'Soybeans', 448);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Vanilla', 331);
+VALUES('frederick.simmons@example.com', 'Barley', 356);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Cocoa', 300);
+VALUES('frederick.simmons@example.com', 'Rice', 158);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Blackberries', 450);
+VALUES('frederick.simmons@example.com', 'Oats', 88);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Tomatoes', 246);
+VALUES('frederick.simmons@example.com', 'Oats', 82);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Taro', 441);
+VALUES('frederick.simmons@example.com', 'Wheat', 184);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Plums', 126);
+VALUES('frederick.simmons@example.com', 'Soybeans', 170);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Bananas', 51);
+VALUES('frederick.simmons@example.com', 'Oats', 392);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Quinoa', 23);
+VALUES('frederick.simmons@example.com', 'Soybeans', 358);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Durian', 403);
+VALUES('frederick.simmons@example.com', 'Oats', 361);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Lettuce', 171);
+VALUES('gabrielle.brooks@example.com', 'Corn', 10);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Lima Beans', 446);
+VALUES('gabrielle.brooks@example.com', 'Soybeans', 497);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Oranges', 425);
+VALUES('gabrielle.brooks@example.com', 'Oats', 441);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Pecans', 171);
+VALUES('isabella.wood@example.com', 'Oats', 494);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('kaitlyn.lewis@example.com', 'Squash', 154);
+VALUES('isabella.wood@example.com', 'Corn', 328);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Sweet Potatoes', 361);
+VALUES('isabella.wood@example.com', 'Rice', 312);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Raspberries', 57);
+VALUES('isabella.wood@example.com', 'Barley', 187);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Dates', 445);
+VALUES('isabella.wood@example.com', 'Barley', 320);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Cassava', 221);
+VALUES('isabella.wood@example.com', 'Barley', 322);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Bananas', 241);
+VALUES('isabella.wood@example.com', 'Barley', 434);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Jicama', 34);
+VALUES('isabella.wood@example.com', 'Rice', 100);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Cashews', 410);
+VALUES('isabella.wood@example.com', 'Oats', 43);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Seaweed', 474);
+VALUES('isabella.wood@example.com', 'Wheat', 240);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Pumpkins', 405);
+VALUES('isabella.wood@example.com', 'Corn', 60);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Pineapples', 335);
+VALUES('isabella.wood@example.com', 'Soybeans', 135);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Tea', 310);
+VALUES('isabella.wood@example.com', 'Corn', 270);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Chia Seeds', 83);
+VALUES('isabella.wood@example.com', 'Oats', 71);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Carrots', 98);
+VALUES('isabella.wood@example.com', 'Rice', 292);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Spinach', 186);
+VALUES('isabella.wood@example.com', 'Soybeans', 369);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Bok Choy', 203);
+VALUES('isabella.wood@example.com', 'Corn', 119);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('mia.walker@example.com', 'Eggplant', 221);
+VALUES('isabella.wood@example.com', 'Soybeans', 300);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Carrots', 445);
+VALUES('mia.murray@example.com', 'Barley', 44);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Vanilla', 326);
+VALUES('mia.murray@example.com', 'Barley', 138);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Blueberries', 85);
+VALUES('mia.murray@example.com', 'Oats', 240);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Rhubarb', 273);
+VALUES('mia.murray@example.com', 'Oats', 440);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Pistachios', 86);
+VALUES('mia.murray@example.com', 'Wheat', 123);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Lentils', 325);
+VALUES('mia.murray@example.com', 'Barley', 482);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Cottonseed', 410);
+VALUES('mia.murray@example.com', 'Corn', 168);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Peas', 490);
+VALUES('mia.murray@example.com', 'Corn', 96);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Turmeric', 380);
+VALUES('mia.murray@example.com', 'Rice', 325);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Spirulina', 192);
+VALUES('mia.murray@example.com', 'Oats', 206);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Pineapples', 209);
+VALUES('yasmine.nguyen@example.com', 'Wheat', 470);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Oats', 65);
+VALUES('yasmine.nguyen@example.com', 'Oats', 29);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Strawberries', 253);
+VALUES('yasmine.nguyen@example.com', 'Barley', 97);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Carrots', 5);
+VALUES('yasmine.nguyen@example.com', 'Corn', 160);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Rapeseed', 350);
+VALUES('yasmine.nguyen@example.com', 'Soybeans', 283);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('patrick.adams@example.com', 'Peppers', 347);
+VALUES('zachary.powell@example.com', 'Corn', 197);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Lettuce', 493);
+VALUES('zachary.powell@example.com', 'Wheat', 140);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Choy Sum', 426);
+VALUES('zachary.powell@example.com', 'Barley', 212);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Asparagus', 331);
+VALUES('zachary.powell@example.com', 'Barley', 151);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Lima Beans', 121);
+VALUES('zachary.powell@example.com', 'Wheat', 303);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Truffles', 148);
+VALUES('zachary.powell@example.com', 'Soybeans', 451);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Kelp', 43);
+VALUES('zachary.powell@example.com', 'Barley', 190);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Squash', 327);
+VALUES('zachary.powell@example.com', 'Wheat', 474);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Zucchini', 392);
+VALUES('daniel.morgan@example.com', 'Wheat', 376);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Kidney Beans', 141);
+VALUES('daniel.morgan@example.com', 'Soybeans', 413);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Bananas', 2);
+VALUES('gabrielle.gardner@example.com', 'Corn', 172);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Dates', 436);
+VALUES('jacob.cruz@example.com', 'Barley', 24);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Pinto Beans', 420);
+VALUES('jacob.cruz@example.com', 'Oats', 149);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Cocoa', 120);
+VALUES('jacob.cruz@example.com', 'Oats', 109);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.mitchell@example.com', 'Barley', 72);
+VALUES('jacob.cruz@example.com', 'Barley', 332);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Tea', 263);
+VALUES('jacob.cruz@example.com', 'Soybeans', 274);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Vanilla', 426);
+VALUES('jacob.cruz@example.com', 'Wheat', 270);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Peas', 284);
+VALUES('jacob.cruz@example.com', 'Soybeans', 161);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Garlic', 171);
+VALUES('jacob.cruz@example.com', 'Corn', 312);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Turmeric', 62);
+VALUES('jacob.cruz@example.com', 'Corn', 112);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Beets', 415);
+VALUES('jacob.cruz@example.com', 'Barley', 173);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Sweet Potatoes', 330);
+VALUES('jacob.cruz@example.com', 'Wheat', 250);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Artichokes', 39);
+VALUES('jacob.cruz@example.com', 'Corn', 241);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Strawberries', 458);
+VALUES('jacob.cruz@example.com', 'Barley', 302);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Honeydew Melon', 316);
+VALUES('jacob.cruz@example.com', 'Barley', 171);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Plums', 260);
+VALUES('jacob.cruz@example.com', 'Rice', 276);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('henry.murphy@example.com', 'Peaches', 157);
+VALUES('jacob.cruz@example.com', 'Barley', 93);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Papayas', 470);
+VALUES('liam.bailey@example.com', 'Corn', 141);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Soybeans', 317);
+VALUES('liam.bailey@example.com', 'Wheat', 210);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Vanilla', 63);
+VALUES('liam.bailey@example.com', 'Barley', 437);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Sesame', 312);
+VALUES('liam.bailey@example.com', 'Wheat', 461);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Almonds', 437);
+VALUES('liam.bailey@example.com', 'Soybeans', 75);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Truffles', 480);
+VALUES('liam.bailey@example.com', 'Corn', 168);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Almonds', 369);
+VALUES('liam.bailey@example.com', 'Rice', 453);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Durian', 90);
+VALUES('liam.bailey@example.com', 'Corn', 94);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Okra', 46);
+VALUES('liam.bailey@example.com', 'Wheat', 295);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Beets', 290);
+VALUES('liam.bailey@example.com', 'Soybeans', 484);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Artichokes', 257);
+VALUES('liam.bailey@example.com', 'Wheat', 467);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Macadamia Nuts', 338);
+VALUES('liam.bailey@example.com', 'Soybeans', 482);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Spirulina', 356);
+VALUES('olivia.morris@example.com', 'Barley', 299);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Nopales', 123);
+VALUES('olivia.morris@example.com', 'Oats', 477);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Pinto Beans', 495);
+VALUES('olivia.morris@example.com', 'Soybeans', 90);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Lima Beans', 372);
+VALUES('olivia.morris@example.com', 'Rice', 183);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Onions', 269);
+VALUES('olivia.morris@example.com', 'Barley', 362);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('isabella.edwards@example.com', 'Lettuce', 494);
+VALUES('olivia.morris@example.com', 'Rice', 176);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.stewart@example.com', 'Amaranth', 197);
+VALUES('olivia.morris@example.com', 'Wheat', 134);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Celery', 216);
+VALUES('olivia.morris@example.com', 'Wheat', 168);
 INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Pears', 269);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Peaches', 154);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Macadamia Nuts', 236);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Oranges', 104);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Jicama', 288);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Taro', 235);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Mangoes', 317);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Quinoa', 216);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Cotton', 76);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Cucumbers', 455);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Chickpeas', 404);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Green Beans', 298);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Cantaloupe', 388);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Asparagus', 368);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.baker@example.com', 'Soybeans', 222);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Kelp', 284);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Durian', 315);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Peaches', 259);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Wheat', 374);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Kidney Beans', 2);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Kale', 230);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Tomatoes', 216);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Macadamia Nuts', 103);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Macadamia Nuts', 252);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Cauliflower', 130);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Spirulina', 97);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('samuel.bennett@example.com', 'Sugarcane', 16);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('vincent.hayes@example.com', 'Rapeseed', 423);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('vincent.hayes@example.com', 'Squash', 449);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('vincent.hayes@example.com', 'Soybeans', 205);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('vincent.hayes@example.com', 'Rhubarb', 265);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Grapes', 310);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Hazelnuts', 298);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Corn', 82);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Kidney Beans', 422);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Cassava', 314);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Jicama', 81);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Cherries', 110);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Nectarines', 497);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Avocados', 202);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Peaches', 70);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Oats', 447);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Avocados', 252);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Pinto Beans', 498);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Lychee', 214);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('abigail.gray@example.com', 'Cucumbers', 330);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Turnips', 252);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Bok Choy', 470);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Broccoli', 464);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Safflower', 63);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Kidney Beans', 328);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Celery', 230);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Tomatoes', 141);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Barley', 175);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Bamboo Shoots', 127);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Pears', 469);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Wheat', 280);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Cabbage', 308);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Spinach', 322);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('daniel.howard@example.com', 'Durian', 205);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Artichokes', 219);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Peaches', 197);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Ginger', 404);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Pineapples', 263);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Pineapples', 8);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Nectarines', 361);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Blackberries', 207);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Cocoa', 222);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Bamboo Shoots', 236);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Choy Sum', 253);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Seaweed', 289);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Watercress', 353);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Beets', 375);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('jacob.fisher@example.com', 'Soybeans', 197);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Papayas', 271);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Honeydew Melon', 29);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Strawberries', 392);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Strawberries', 169);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Macadamia Nuts', 75);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Turnips', 13);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Peaches', 50);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Corn', 203);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Bok Choy', 110);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Wheat', 404);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Hazelnuts', 305);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Carrots', 147);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Zucchini', 265);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Eggplant', 302);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Green Beans', 402);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Tea', 280);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Beets', 91);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Sugar Cane', 353);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('liam.bishop@example.com', 'Seaweed', 182);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Lettuce', 61);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Rhubarb', 496);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Hemp', 174);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Pinto Beans', 420);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Lychee', 331);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Quinoa', 339);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Dates', 305);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Sorghum', 334);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Choy Sum', 47);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Sesame', 93);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Beets', 87);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.reyes@example.com', 'Artichokes', 17);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Spinach', 161);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Garlic', 432);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Artichokes', 209);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Passion Fruit', 421);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Quinoa', 104);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Potatoes', 471);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Spirulina', 223);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Durian', 330);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.ross@example.com', 'Spirulina', 207);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Artichokes', 437);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Green Beans', 217);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Kiwifruit', 480);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Onions', 15);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Pinto Beans', 119);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Dulse', 286);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Lentils', 11);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Cassava', 15);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Celery', 335);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Chickpeas', 141);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Sugarcane', 460);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Black Beans', 183);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Kale', 91);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Chia Seeds', 224);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Papayas', 460);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Lentils', 62);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Plums', 469);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.alexander@example.com', 'Hemp', 262);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Nopales', 89);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Oats', 135);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Passion Fruit', 432);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Lychee', 50);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Sugar Cane', 392);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Sunflowers', 393);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('zachary.powell@example.com', 'Ginger', 482);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Peanuts', 11);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Cotton', 431);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Taro', 76);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Mangoes', 498);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Wheat', 309);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Garlic', 400);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Cocoa', 412);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Chia Seeds', 177);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Oranges', 430);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Jicama', 269);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Jicama', 59);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Sorghum', 369);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Cucumbers', 384);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('benjamin.bryant@example.com', 'Kiwifruit', 169);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Raspberries', 136);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Durian', 50);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Cucumbers', 69);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Sorghum', 447);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Onions', 2);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Potatoes', 305);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Broccoli', 214);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Pears', 39);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('frederick.henderson@example.com', 'Cauliflower', 494);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Coconuts', 192);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Apples', 488);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Eggplant', 302);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Mangoes', 400);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Cucumbers', 398);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Coconuts', 89);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Eggplant', 165);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Oats', 368);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Guava', 319);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Papayas', 123);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Asparagus', 216);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Durian', 330);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Oats', 448);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Asparagus', 415);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('olivia.morris@example.com', 'Lychee', 318);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Grapes', 423);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Lettuce', 335);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Black Beans', 8);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Cotton', 94);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Turmeric', 225);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Pinto Beans', 464);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Blackberries', 375);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Garlic', 82);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Black Beans', 180);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Mangoes', 202);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Tea', 177);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Cashews', 357);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Bamboo Shoots', 348);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Kelp', 287);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Barley', 41);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Hazelnuts', 295);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('quinn.lopez@example.com', 'Almonds', 155);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Pineapples', 100);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Lima Beans', 278);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Papayas', 459);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Mushrooms', 316);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Lentils', 278);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Zucchini', 467);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Grapes', 399);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Pears', 40);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Black Beans', 172);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Cotton', 477);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Avocados', 114);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Pinto Beans', 279);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Sugarcane', 38);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('ursula.smith@example.com', 'Almonds', 318);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Cabbage', 95);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Kiwifruit', 433);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Peanuts', 413);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Sorghum', 209);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Rice', 431);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Lychee', 41);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Lychee', 264);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Taro', 255);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Sesame', 67);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Dulse', 161);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Pineapples', 499);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Oats', 484);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Squash', 133);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Blackberries', 358);
-INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)
-VALUES('wendy.williams@example.com', 'Potatoes', 310);
+VALUES('olivia.morris@example.com', 'Barley', 248);
