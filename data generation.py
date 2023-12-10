@@ -453,15 +453,18 @@ farmer_inventory = {}
 with open ("F2F_Data.SQL", "a") as f:
     for person in user_roles_list:
         if person[1] == "Farmer":
-            for i in range(round(random.random()*20)):
+            product_dict = {}
+            for i in range(round(random.random()*5)):
                 product = products[math.floor(random.random()*len(products))]
                 quantity = round(random.random()*500)
-                if product in farmer_inventory:
-                    update = farmer_inventory[product].append((person[0], quantity))
+                if product in product_dict:
+                   continue
                 else:
-                    farmer_inventory[product]=[(person[0], quantity)]
+                    pass
+                    # farmer_inventory[product]=[(person[0], quantity)]
                 f.write(f"INSERT INTO farmer_inventories(farmer_id, product_name, product_quantity)\n")
                 f.write(f"VALUES('{person[0]}', '{product}', {quantity});\n")
+                product_dict[product] = True
 
 
 # distributor_inventory = {}
