@@ -256,20 +256,19 @@ with open ("F2F_Data.SQL", "a") as f:
 farmer_inventory = {}
 with open ("F2F_Data.SQL", "a") as f:
     for person in user_roles_list:
-        product_dict = {}
         if person[1] == "Farmer":
-            
+            product_dict = {}
             for i in range(round(random.random()*5)):
-                product = products[math.floor(random.random()*len(products))][0]
+                product = products[math.floor(random.random()*len(products))]
                 quantity = round(random.random()*500)
-                value = random.randint(1, 100)
-                if product in product_dict.keys():
+                value = random.uniform(0.25, (int(product[0])/10))
+                if product in product_dict:
                    continue
                 else:
                     pass
                     # farmer_inventory[product]=[(person[0], quantity)]
                 f.write(f"INSERT INTO farmer_inventories(farmer_inventory_farmer_id, farmer_inventory_product_id, farmer_inventory_product_quantity, farmer_inventory_unit_price)\n")
-                f.write(f"VALUES('{user_id_list[person[0]]}', '{product}', {quantity}, {value});\n")
+                f.write(f"VALUES('{user_id_list[person[0]]}', '{product[0]}', {quantity}, {value});\n")
                 product_dict[product] = True
 
 
