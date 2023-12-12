@@ -275,12 +275,21 @@ with open ("F2F_Data.SQL", "a") as f:
 
 distributor_inventory = {}
 with open ("F2F_Data.SQL", "a") as f:
+    flag = 0
     for person in user_roles_list:
         #distributor purchases from farmer
         if person[1] == "Distributor":
             for product in products:
                 f.write(f"INSERT INTO distributor_inventories(distributor_inventory_distributor_id, distributor_inventory_product_id, distributor_inventory_product_quantity, distributor_inventory_unit_price)\n")
                 f.write(f"VALUES('{user_id_list[person[0]]}', '{product[0]}', {0}, {0});\n")
+
+            if flag == 0:
+                for i in range(15):
+                    product = products[i][2]
+                    product_id = products[i][0]
+                    farmer_options = farmer_inventory[product]
+                    farmer = farmer_options[randint(0, len(farmer_options)-1)]
+                    quantity = round(random.random()*farmer[1])
                 
                 # buy_product = randint(0, 1)
                 # if buy_product == 1:
