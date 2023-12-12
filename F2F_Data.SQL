@@ -1043,3 +1043,23 @@ INSERT INTO distributor_inventories(distributor_inventory_distributor_id, distri
 VALUES('201', '106', 0, 0);
 INSERT INTO distributor_inventories(distributor_inventory_distributor_id, distributor_inventory_product_id, distributor_inventory_product_quantity, distributor_inventory_unit_price)
 VALUES('201', '107', 0, 0);
+-- INSERT INTO farmer_inventories(farmer_inventory_farmer_id, farmer_inventory_product_id, farmer_inventory_product_quantity, farmer_inventory_unit_price)
+-- VALUES('101', '106', 95, 89);
+INSERT INTO farmer_inventories(farmer_inventory_farmer_id, farmer_inventory_product_id, farmer_inventory_product_quantity, farmer_inventory_unit_price)
+VALUES('110', '103', 293, 95);
+INSERT INTO farmer_inventories(farmer_inventory_farmer_id, farmer_inventory_product_id, farmer_inventory_product_quantity, farmer_inventory_unit_price)
+VALUES('110', '107', 2, 23);
+INSERT INTO farmer_inventories(farmer_inventory_farmer_id, farmer_inventory_product_id, farmer_inventory_product_quantity, farmer_inventory_unit_price)
+VALUES('110', '105', 405, 20);
+INSERT INTO farmer_inventories(farmer_inventory_farmer_id, farmer_inventory_product_id, farmer_inventory_product_quantity, farmer_inventory_unit_price)
+VALUES('179', '100', 459, 24);
+INSERT INTO transactions (transaction_buyer_id, transaction_seller_id, transaction_product_id, transaction_quantity, transaction_unit_price)
+VALUES ('184', '101', '106', 20, 89);
+INSERT INTO transactions (transaction_buyer_id, transaction_seller_id, transaction_product_id, transaction_quantity, transaction_unit_price)
+VALUES ('184', '110', '103', 100, 95);
+INSERT INTO transactions (transaction_buyer_id, transaction_seller_id, transaction_product_id, transaction_quantity, transaction_unit_price)
+VALUES ('184', '110', '107', 2, 23);
+INSERT INTO transactions (transaction_buyer_id, transaction_seller_id, transaction_product_id, transaction_quantity, transaction_unit_price)
+VALUES ('184', '110', '105', 30, 20);
+INSERT INTO transactions (transaction_buyer_id, transaction_seller_id, transaction_product_id, transaction_quantity, transaction_unit_price)
+VALUES ('184', '179', '100', 45, 24);
